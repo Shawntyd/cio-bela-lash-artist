@@ -5,808 +5,508 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cio Bela Salon - Lash Artist Opportunity</title>
 <meta name="description" content="Join Cio Bela Salon in The Woodlands, TX as a lash artist. Step into proven overflow demand with built-in clientele and income-scaled rent.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --cream:#F5F0E8;
-    --cream-warm:#F6F1E7;
-    --bark:#2C2016;
-    --gold:#B8935A;
-    --gold-light:#D4B896;
-    --charcoal:#1A1410;
-    --font-display:'Cormorant Garamond', serif;
-    --font-body:'Jost', sans-serif;
-    --max-w:1160px;
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  @media (prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto;}
-    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important;}
-  }
-  body{
-    margin:0;
-    font-family:var(--font-body);
-    background:var(--cream);
-    color:var(--charcoal);
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-  }
-  img,svg{max-width:100%;display:block;}
-  a{color:inherit;}
-  h1,h2,h3{font-family:var(--font-display); margin:0; font-weight:500; color:var(--bark);}
-  em{font-style:italic; color:var(--gold); font-weight:600;}
-  .wrap{max-width:var(--max-w); margin:0 auto; padding:0 24px;}
-  .eyebrow{
-    font-family:var(--font-body);
-    text-transform:uppercase;
-    letter-spacing:.14em;
-    font-size:.75rem;
-    font-weight:600;
-    color:var(--gold);
-    margin-bottom:14px;
-    display:block;
-  }
-  section{padding:clamp(56px,9vw,112px) 0;}
-  .section-alt{background:var(--cream-warm);}
-  .btn{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    background:var(--bark);
-    color:var(--cream);
-    font-family:var(--font-body);
-    font-weight:600;
-    font-size:.95rem;
-    letter-spacing:.02em;
-    padding:16px 32px;
-    border-radius:2px;
-    border:1px solid var(--bark);
-    text-decoration:none;
-    cursor:pointer;
-    transition:background .2s ease, color .2s ease;
-  }
-  .btn:hover{background:transparent; color:var(--bark);}
-  .btn:focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --cream:#F5F0E8;--dark:#1A1410;--darker:#0E0C08;
+  --burg:#6B2737;--gold:#C9A96E;--warm:#8C7B6B;
+  --rule:rgba(201,169,110,0.2);
+}
+body{background:var(--cream);color:var(--dark);font-family:'Jost',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden;}
 
-  .brandline{
-    text-align:center;
-    padding:18px 0;
-    font-size:.76rem;
-    letter-spacing:.16em;
-    text-transform:uppercase;
-    color:var(--bark);
-    border-bottom:1px solid rgba(44,32,22,.1);
-  }
+/* HERO */
+.hero{min-height:100vh;background:var(--dark);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:80px 32px 60px;text-align:center;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 25% 65%,rgba(107,39,55,0.45) 0%,transparent 55%),radial-gradient(ellipse at 80% 20%,rgba(201,169,110,0.1) 0%,transparent 50%);}
+.hero-eye{font-size:10px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);position:relative;z-index:1;margin-bottom:28px;}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,10vw,96px);font-weight:300;color:var(--cream);line-height:1.0;position:relative;z-index:1;}
+.hero-title em{font-style:italic;color:var(--gold);}
+.hero-line{width:1px;height:60px;background:linear-gradient(to bottom,transparent,var(--gold),transparent);margin:36px auto;position:relative;z-index:1;}
+.hero-sub{font-family:'Cormorant Garamond',serif;font-size:clamp(15px,2.5vw,22px);font-style:italic;color:rgba(245,240,232,0.7);max-width:540px;position:relative;z-index:1;}
+.hero-loc{margin-top:20px;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:rgba(201,169,110,0.45);position:relative;z-index:1;}
 
-  .hero{padding:clamp(64px,11vw,130px) 0 clamp(48px,8vw,80px); text-align:center;}
-  .hero .eyebrow{text-align:center;}
-  .hero h1{
-    font-size:clamp(2.6rem,6vw,4.6rem);
-    line-height:1.08;
-    max-width:16ch;
-    margin:0 auto 28px;
-  }
-  .hero p.sub{
-    max-width:52ch;
-    margin:0 auto;
-    font-size:clamp(1.05rem,1.6vw,1.25rem);
-    color:var(--bark);
-    opacity:.85;
-  }
+/* SHARED */
+.wrap{max-width:900px;margin:0 auto;padding:0 32px;}
+.sec{padding:72px 0;}
+.sec-lbl{font-size:10px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,5vw,50px);font-weight:300;line-height:1.1;margin-bottom:24px;}
+.sec-title em{font-style:italic;color:var(--burg);}
+.body-txt{font-size:14px;color:var(--warm);max-width:660px;margin-bottom:14px;line-height:1.85;}
 
-  .stats-outer{border-top:1px solid rgba(44,32,22,.12); border-bottom:1px solid rgba(44,32,22,.12);}
-  .stats{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:rgba(44,32,22,.12);}
-  .stat{background:var(--cream); padding:36px 20px; text-align:center;}
-  .stat .num{
-    font-family:var(--font-display);
-    font-style:italic;
-    font-size:clamp(2rem,4vw,2.75rem);
-    color:var(--gold);
-    line-height:1;
-    margin-bottom:10px;
-  }
-  .stat .label{font-size:.85rem; color:var(--bark); opacity:.8; max-width:20ch; margin:0 auto;}
-  @media (max-width:720px){ .stats{grid-template-columns:repeat(2,1fr);} }
+/* ABOUT STATS */
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:44px;}
+.about-stat{border-top:1px solid var(--rule);padding-top:18px;}
+.about-num{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:300;color:var(--dark);line-height:1;}
+.about-num em{font-style:italic;color:var(--gold);}
+.about-lbl{font-size:12px;letter-spacing:1px;color:var(--warm);margin-top:4px;}
 
-  .prose-block{max-width:62ch;}
-  .prose-block h2{font-size:clamp(1.9rem,4vw,2.7rem); margin-bottom:22px; line-height:1.15;}
-  .prose-block p{margin:0 0 16px; font-size:1.05rem; opacity:.88;}
-  .prose-block p:last-child{margin-bottom:0;}
+/* SERVICES */
+.svc-bg{background:var(--dark);}
+.svc-bg .sec-lbl{color:var(--gold);}
+.svc-bg .sec-title{color:var(--cream);}
+.svc-bg .sec-title em{color:var(--gold);font-style:italic;}
+.svc-bg .body-txt{color:rgba(245,240,232,0.42);}
+.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(201,169,110,0.1);border:1px solid rgba(201,169,110,0.1);margin-top:36px;}
+.svc-card{background:var(--dark);padding:28px;}
+.svc-tag{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);opacity:.6;margin-bottom:8px;}
+.svc-name{font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--cream);margin-bottom:8px;}
+.svc-detail{font-size:12px;color:rgba(140,123,107,0.8);line-height:1.8;}
+.referral-note{margin-top:20px;padding:20px 24px;border-left:2px solid var(--gold);background:rgba(201,169,110,0.05);}
+.referral-note p{font-size:13px;color:rgba(245,240,232,0.48);line-height:1.85;}
+.referral-note strong{color:var(--gold);font-weight:400;}
 
-  .calc-head{text-align:center; max-width:60ch; margin:0 auto 20px;}
-  .calc-head .eyebrow{text-align:center;}
-  .calc-head h2{font-size:clamp(1.9rem,4vw,2.7rem); margin-bottom:16px;}
-  .calc-head p{opacity:.85; font-size:1.05rem;}
+/* LASH PRICING */
+.wax-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:36px;}
+.wax-card{background:var(--cream);padding:24px 20px;}
+.wax-name{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--dark);margin-bottom:4px;}
+.wax-freq{font-size:11px;color:var(--warm);margin-bottom:12px;}
+.wax-price{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:300;color:var(--burg);line-height:1;}
+.wax-unit{font-size:11px;color:var(--warm);margin-top:2px;}
+.price-fn{margin-top:20px;font-size:11px;color:rgba(140,123,107,0.55);line-height:1.75;max-width:660px;}
 
-  .steps{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin:40px 0;}
-  .step{text-align:center; padding:0 12px;}
-  .step .n{font-family:var(--font-display); font-style:italic; color:var(--gold-light); font-size:2.2rem; line-height:1; margin-bottom:8px;}
-  .step .t{font-weight:600; font-size:.95rem; margin-bottom:4px; color:var(--bark);}
-  .step .d{font-size:.88rem; opacity:.75;}
-  @media (max-width:700px){ .steps{grid-template-columns:1fr; gap:20px;} }
+/* PROFIT TABLE */
+.profit-bg{background:var(--darker);}
+.profit-bg .sec-lbl{color:var(--gold);}
+.profit-bg .sec-title{color:var(--cream);}
+.profit-bg .sec-title em{color:var(--gold);font-style:italic;}
+.profit-bg .body-txt{color:rgba(245,240,232,0.38);}
+.profit-table{width:100%;border-collapse:collapse;border:1px solid rgba(201,169,110,0.15);margin-top:36px;}
+.profit-table th{background:rgba(201,169,110,0.07);padding:13px 16px;font-family:'Jost',sans-serif;font-size:9px;font-weight:400;letter-spacing:2px;text-transform:uppercase;color:rgba(201,169,110,0.5);text-align:center;border-bottom:1px solid rgba(201,169,110,0.15);}
+.profit-table th:first-child{text-align:left;}
+.profit-table td{padding:18px 16px;border-bottom:1px solid rgba(201,169,110,0.07);font-family:'Cormorant Garamond',serif;font-size:17px;color:rgba(245,240,232,0.7);text-align:center;}
+.profit-table tr:last-child td{border-bottom:none;}
+.profit-table td:first-child{text-align:left;color:var(--cream);}
+.profit-table td.svc{color:var(--gold);font-size:20px;}
+.profit-table td.rent{font-family:'Jost',sans-serif;font-size:12px;color:var(--warm);}
+.profit-table td.annual{color:rgba(245,240,232,0.85);}
+.profit-table tr.top td{color:var(--gold);}
+.profit-fn{margin-top:14px;font-size:11px;color:rgba(140,123,107,0.3);line-height:1.75;}
 
-  .scroll-cue{text-align:center; font-size:.85rem; letter-spacing:.08em; color:var(--gold); margin-bottom:28px; text-transform:uppercase;}
+/* TIER CARDS */
+.tier-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:44px;}
+.tier-card{border-top:1px solid var(--rule);padding-top:22px;}
+.tier-card.feat{border-top-color:var(--gold);}
+.tier-num{font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:300;color:rgba(107,39,55,0.18);line-height:1;margin-bottom:4px;}
+.tier-gross{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+.tier-name{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--dark);margin-bottom:12px;}
+.tier-name em{font-style:italic;color:var(--burg);}
+.tier-list{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.tier-list li{display:flex;gap:8px;font-size:12px;color:var(--warm);line-height:1.6;}
+.tier-list li::before{content:'--';color:var(--gold);flex-shrink:0;font-size:10px;padding-top:3px;}
 
-  .calc-panel{background:var(--charcoal); color:var(--cream); border-radius:6px; padding:clamp(24px,4vw,44px);}
-  .calc-panel h3{color:var(--cream); font-size:1.4rem; margin-bottom:6px;}
-  .calc-panel .hint{font-size:.85rem; opacity:.6; margin-bottom:24px;}
+/* CALCULATOR */
+.calc-intro{background:var(--burg);padding:56px 32px 40px;text-align:center;}
+.calc-intro h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,5vw,52px);font-weight:300;color:var(--cream);line-height:1.1;margin-bottom:14px;}
+.calc-intro h2 em{font-style:italic;color:var(--gold);}
+.calc-intro p{font-size:14px;color:rgba(245,240,232,0.6);max-width:500px;margin:0 auto 28px;line-height:1.85;}
+.calc-steps{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;max-width:620px;margin:0 auto 20px;}
+.calc-step{background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.1);padding:14px;text-align:left;}
+.calc-step-n{font-family:'Cormorant Garamond',serif;font-size:30px;color:rgba(201,169,110,0.3);line-height:1;margin-bottom:6px;}
+.calc-step-t{font-size:13px;color:var(--cream);margin-bottom:3px;}
+.calc-step-d{font-size:11px;color:rgba(245,240,232,0.38);line-height:1.6;}
+.calc-arrow{font-size:11px;color:rgba(245,240,232,0.22);letter-spacing:2px;}
+.calc-body{background:var(--darker);border-top:1px solid rgba(201,169,110,0.15);padding:28px 24px;}
+.calc-app{max-width:1040px;margin:0 auto;display:grid;grid-template-columns:1fr 290px;gap:0;}
+.calc-week{padding-right:24px;border-right:1px solid var(--rule);}
+.calc-dash{padding-left:24px;}
+.c-lbl{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.days-row{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:10px;}
+.dcol{display:flex;flex-direction:column;gap:5px;}
+.dhdr{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--warm);text-align:center;padding-bottom:6px;border-bottom:1px solid var(--rule);}
+.dttl{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--gold);text-align:center;padding-top:5px;border-top:1px solid var(--rule);min-height:26px;}
+.dttl.z{font-family:'Jost',sans-serif;font-size:11px;color:rgba(140,123,107,0.28);}
+.chip{background:rgba(107,39,55,0.4);border:1px solid rgba(107,39,55,0.7);padding:4px 5px;display:flex;justify-content:space-between;align-items:center;}
+.chip-p{font-size:10px;color:var(--gold);}
+.chip-x{background:none;border:none;color:rgba(255,255,255,0.22);font-size:15px;cursor:pointer;padding:0 1px;line-height:1;}
+.addbtn{background:none;border:1px dashed rgba(201,169,110,0.2);color:rgba(201,169,110,0.35);font-size:20px;padding:6px;width:100%;cursor:pointer;}
+.hint-sm{font-size:11px;color:rgba(140,123,107,0.32);margin-top:8px;}
+.ds{border-top:1px solid var(--rule);padding-top:14px;margin-bottom:16px;}
+.ds-lbl{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--warm);margin-bottom:3px;}
+.ds-val{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:var(--cream);line-height:1;}
+.ds-val.g{color:var(--gold);}
+.ds-sub{font-size:11px;color:var(--warm);margin-top:3px;}
+.tbadge{background:rgba(107,39,55,0.25);border:1px solid rgba(107,39,55,0.5);padding:9px 14px;font-size:10px;letter-spacing:2px;text-transform:uppercase;text-align:center;color:var(--cream);margin-bottom:10px;}
+.tbadge.top{background:rgba(201,169,110,0.1);border-color:var(--gold);color:var(--gold);}
+.prog-row{display:flex;justify-content:space-between;font-size:10px;color:var(--warm);margin-bottom:5px;}
+.prog-tr{height:3px;background:rgba(255,255,255,0.06);border-radius:2px;overflow:hidden;margin-bottom:8px;}
+.prog-fill{height:100%;background:var(--gold);width:0%;transition:width 0.3s;}
+.prog-msg{font-size:11px;color:var(--warm);line-height:1.65;}
+.bkwrap{border-top:1px solid var(--rule);padding-top:12px;margin-top:12px;}
+.bklbl{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--warm);margin-bottom:8px;}
+.bkrow{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(201,169,110,0.05);font-size:12px;}
+.bkname{color:rgba(245,240,232,0.5);}
+.bkct{color:var(--warm);font-size:11px;}
+.bkamt{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--gold);}
+.emptyhint{text-align:center;padding:20px 8px;color:rgba(140,123,107,0.28);font-size:12px;line-height:1.8;border:1px dashed rgba(201,169,110,0.07);}
+.resetbtn{width:100%;padding:10px;background:none;border:1px solid rgba(255,255,255,0.06);color:rgba(255,255,255,0.18);font-family:'Jost',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;cursor:pointer;margin-top:14px;}
+.modal-ov{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.9);align-items:center;justify-content:center;padding:20px;}
+.modal-ov.open{display:flex;}
+.modal-box{background:#1E1812;border:1px solid rgba(201,169,110,0.2);width:100%;max-width:400px;max-height:88vh;overflow-y:auto;}
+.mscr{padding:22px;}
+.meye{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:6px;}
+.mhead{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--cream);margin-bottom:14px;}
+.sopt{display:flex;align-items:center;justify-content:space-between;padding:12px;cursor:pointer;margin-bottom:2px;border:1px solid transparent;}
+.sopt:active{background:rgba(107,39,55,0.3);}
+.sopt-name{font-size:14px;color:var(--cream);}
+.sopt-time{font-size:11px;color:var(--warm);margin-top:2px;}
+.sopt-price{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--gold);}
+.pinput{width:100%;background:rgba(245,240,232,0.05);border:2px solid var(--gold);color:var(--cream);font-family:'Cormorant Garamond',serif;font-size:40px;padding:14px;outline:none;text-align:center;margin-bottom:14px;-webkit-appearance:none;appearance:none;display:block;}
+.addbtn-c{display:block;width:100%;padding:16px;background:var(--gold);border:none;color:var(--dark);font-family:'Jost',sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;cursor:pointer;font-weight:500;margin-bottom:8px;-webkit-appearance:none;appearance:none;}
+.cancelbtn{display:block;width:100%;padding:12px;background:none;border:1px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.32);font-family:'Jost',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;-webkit-appearance:none;appearance:none;}
 
-  .week-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:14px; margin-bottom:8px;}
-  @media (max-width:760px){
-    .week-grid{display:flex; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:8px; margin:0 -24px 8px; padding-left:24px; padding-right:24px;}
-    .day-col{min-width:78vw; scroll-snap-align:start;}
-  }
-  .day-col{background:rgba(245,240,232,.05); border:1px solid rgba(245,240,232,.14); border-radius:4px; padding:14px; display:flex; flex-direction:column; gap:10px;}
-  .day-head{display:flex; align-items:center; justify-content:space-between;}
-  .day-head .day-name{font-weight:600; letter-spacing:.04em;}
-  .day-btns{display:flex; gap:6px;}
-  .day-btn{
-    width:26px; height:26px; border-radius:50%;
-    border:1px solid var(--gold-light);
-    background:transparent; color:var(--gold-light);
-    font-size:1rem; line-height:1; cursor:pointer;
-    display:flex; align-items:center; justify-content:center;
-    transition:background .15s ease, color .15s ease;
-  }
-  .day-btn:hover{background:var(--gold-light); color:var(--charcoal);}
-  .day-btn:focus-visible{outline:2px solid var(--gold); outline-offset:2px;}
-  .day-btn:disabled{opacity:.3; cursor:not-allowed;}
-  .row-list{display:flex; flex-direction:column; gap:8px; min-height:20px;}
-  .week-row{display:flex; flex-direction:column; gap:6px; background:rgba(245,240,232,.06); border-radius:3px; padding:8px;}
-  .week-row select{
-    width:100%; background:var(--charcoal); color:var(--cream);
-    border:1px solid rgba(245,240,232,.25); border-radius:3px;
-    padding:6px 8px; font-family:var(--font-body); font-size:.8rem;
-  }
-  .row-price-wrap{display:flex; align-items:center; gap:4px;}
-  .row-price-wrap .cur{opacity:.6; font-size:.85rem;}
-  .week-row input[type="number"]{
-    width:100%; background:transparent; border:none;
-    border-bottom:1px solid rgba(245,240,232,.3);
-    color:var(--gold-light); font-family:var(--font-display);
-    font-size:1.1rem; padding:2px 0;
-  }
-  .week-row input[type="number"]:focus-visible{outline:none; border-bottom-color:var(--gold);}
-  .empty-hint{font-size:.78rem; opacity:.45; font-style:italic; margin:0;}
-  .week-caption{text-align:center; font-size:.82rem; opacity:.55; margin:0 0 32px;}
+/* WHY */
+.why-bg{background:var(--burg);}
+.why-bg .sec-lbl{color:rgba(245,240,232,0.38);}
+.why-bg .sec-title{color:var(--cream);}
+.why-bg .sec-title em{color:var(--gold);font-style:italic;}
+.why-bg .body-txt{color:rgba(245,240,232,0.48);}
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:0 44px;margin-top:44px;}
+.pillar{border-top:1px solid rgba(245,240,232,0.1);padding:22px 0;}
+.pillar-num{font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:300;color:rgba(201,169,110,0.16);line-height:1;margin-bottom:6px;}
+.pillar-title{font-family:'Cormorant Garamond',serif;font-size:19px;color:var(--cream);margin-bottom:8px;}
+.pillar-txt{font-size:13px;color:rgba(245,240,232,0.46);line-height:1.85;}
 
-  .numbers-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:rgba(245,240,232,.14); border-radius:4px; overflow:hidden; margin-bottom:28px;}
-  .number-card{background:var(--charcoal); padding:22px 18px; text-align:center;}
-  .number-card .label{font-size:.75rem; text-transform:uppercase; letter-spacing:.08em; opacity:.6; margin-bottom:8px;}
-  .number-card .value{font-family:var(--font-display); font-size:clamp(1.6rem,3.4vw,2.2rem); color:var(--gold-light);}
-  .number-card .sub{font-size:.76rem; opacity:.55; margin-top:6px;}
-  @media (max-width:640px){ .numbers-grid{grid-template-columns:1fr;} }
+/* CTA */
+.cta-bg{background:var(--dark);padding:90px 32px;text-align:center;position:relative;overflow:hidden;}
+.cta-bg::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(107,39,55,0.3) 0%,transparent 65%);}
+.cta-lbl{font-size:10px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);position:relative;z-index:1;}
+.cta-title{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,6vw,64px);font-weight:300;color:var(--cream);line-height:1.1;margin:14px 0 24px;position:relative;z-index:1;}
+.cta-title em{font-style:italic;color:var(--gold);}
+.cta-sub{font-size:14px;color:rgba(245,240,232,0.4);max-width:460px;margin:0 auto 40px;position:relative;z-index:1;line-height:1.85;}
+.cta-btn{display:inline-block;border:1px solid var(--gold);padding:17px 48px;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);text-decoration:none;position:relative;z-index:1;font-family:'Jost',sans-serif;}
+.footnote{background:var(--dark);text-align:center;padding:16px 32px 40px;font-size:11px;color:rgba(140,123,107,0.28);border-top:1px solid rgba(201,169,110,0.07);line-height:1.75;}
 
-  .tier-block{text-align:center;}
-  .tier-name{font-family:var(--font-display); font-style:italic; font-size:1.3rem; color:var(--gold-light); margin-bottom:10px;}
-  .tier-bar-wrap{display:flex; align-items:center; gap:12px; margin-bottom:8px;}
-  .tier-bar-track{flex:1; height:6px; background:rgba(245,240,232,.12); border-radius:3px; overflow:hidden;}
-  .tier-bar-fill{height:100%; width:0%; background:var(--gold); border-radius:3px; transition:width .4s ease;}
-  .tier-endpoints{display:flex; justify-content:space-between; font-size:.78rem; opacity:.6;}
-  .tier-note{font-size:.85rem; opacity:.8; margin:10px 0 0;}
-
-  .clear-btn{
-    display:block; margin:28px auto 0; background:none;
-    border:1px solid rgba(245,240,232,.3); color:var(--cream);
-    font-family:var(--font-body); font-size:.82rem; letter-spacing:.06em;
-    padding:10px 20px; border-radius:20px; cursor:pointer;
-    transition:border-color .2s ease, color .2s ease;
-  }
-  .clear-btn:hover{border-color:var(--gold-light); color:var(--gold-light);}
-  .clear-btn:focus-visible{outline:2px solid var(--gold); outline-offset:2px;}
-
-  .grid-head{text-align:center; max-width:62ch; margin:0 auto 48px;}
-  .grid-head .eyebrow{text-align:center;}
-  .grid-head h2{font-size:clamp(1.9rem,4vw,2.7rem); margin-bottom:16px;}
-  .grid-head p{opacity:.85; font-size:1.05rem;}
-
-  .cards{display:grid; grid-template-columns:repeat(4,1fr); gap:20px;}
-  @media (max-width:900px){ .cards{grid-template-columns:repeat(2,1fr);} }
-  @media (max-width:560px){ .cards{grid-template-columns:1fr;} }
-  .card{
-    background:var(--cream); border:1px solid rgba(44,32,22,.1); border-radius:4px;
-    padding:26px 24px; transition:transform .2s ease, box-shadow .2s ease;
-  }
-  .card:hover{transform:translateY(-3px); box-shadow:0 12px 28px rgba(44,32,22,.08);}
-  .card .tag{font-size:.7rem; text-transform:uppercase; letter-spacing:.1em; color:var(--gold); font-weight:600; margin-bottom:10px;}
-  .card h3{font-size:1.25rem; margin-bottom:10px;}
-  .card p{font-size:.9rem; opacity:.8; margin:0;}
-  .below-grid-note{max-width:76ch; margin:40px auto 0; text-align:center; font-size:1.05rem; opacity:.88;}
-  .below-grid-note strong{color:var(--bark); font-weight:600;}
-
-  .price-cards{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
-  @media (max-width:900px){ .price-cards{grid-template-columns:repeat(2,1fr);} }
-  @media (max-width:560px){ .price-cards{grid-template-columns:1fr;} }
-  .price-card{
-    background:var(--cream-warm); border:1px solid rgba(44,32,22,.12); border-radius:4px;
-    padding:26px 24px; text-align:center; transition:transform .2s ease, box-shadow .2s ease;
-  }
-  .price-card:hover{transform:translateY(-3px); box-shadow:0 12px 28px rgba(44,32,22,.08);}
-  .price-card h3{font-size:1.1rem; margin-bottom:6px;}
-  .price-card .desc{font-size:.83rem; opacity:.7; margin-bottom:16px; min-height:2.4em;}
-  .price-card .price{font-family:var(--font-display); font-style:italic; font-size:2rem; color:var(--gold); margin-bottom:4px;}
-  .price-card .unit{font-size:.75rem; opacity:.6; text-transform:uppercase; letter-spacing:.06em;}
-  .price-note{font-size:.8rem; opacity:.65; max-width:70ch; margin:28px auto 0; text-align:center;}
-
-  .table-wrap{overflow-x:auto; margin-top:40px;}
-  table{width:100%; border-collapse:collapse; min-width:560px;}
-  th,td{text-align:left; padding:16px 18px; border-bottom:1px solid rgba(44,32,22,.12); font-size:.95rem;}
-  th{font-family:var(--font-body); font-weight:600; text-transform:uppercase; font-size:.72rem; letter-spacing:.08em; color:var(--gold); border-bottom:2px solid var(--bark);}
-  td:last-child, th:last-child{font-family:var(--font-display); font-size:1.1rem; color:var(--bark); font-weight:600;}
-  .table-foot{font-size:.8rem; opacity:.62; margin-top:16px; max-width:78ch;}
-
-  .phases{display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-top:44px;}
-  @media (max-width:980px){ .phases{grid-template-columns:repeat(2,1fr);} }
-  @media (max-width:560px){ .phases{grid-template-columns:1fr;} }
-  .phase{background:var(--cream); border:1px solid rgba(44,32,22,.1); border-radius:4px; padding:26px 22px;}
-  .phase .n{font-family:var(--font-display); font-style:italic; color:var(--gold-light); font-size:1.8rem; margin-bottom:10px;}
-  .phase .meta{font-size:.72rem; text-transform:uppercase; letter-spacing:.06em; color:var(--gold); margin-bottom:6px;}
-  .phase h3{font-size:1.2rem; margin-bottom:14px;}
-  .phase ul{margin:0; padding-left:18px; font-size:.86rem; opacity:.82;}
-  .phase li{margin-bottom:8px;}
-  .phase li:last-child{margin-bottom:0;}
-
-  .why-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:28px 24px; margin-top:44px;}
-  @media (max-width:900px){ .why-grid{grid-template-columns:repeat(2,1fr);} }
-  @media (max-width:560px){ .why-grid{grid-template-columns:1fr;} }
-  .why-item .n{font-family:var(--font-display); font-style:italic; color:var(--gold); font-size:1.6rem; margin-bottom:8px;}
-  .why-item h3{font-size:1.15rem; margin-bottom:8px;}
-  .why-item p{font-size:.89rem; opacity:.8; margin:0;}
-
-  .cta-section{text-align:center; background:var(--bark); color:var(--cream);}
-  .cta-section .eyebrow{color:var(--gold-light); text-align:center;}
-  .cta-section h2{color:var(--cream); font-size:clamp(1.9rem,4vw,2.9rem); max-width:20ch; margin:0 auto 20px;}
-  .cta-section p{max-width:58ch; margin:0 auto 32px; opacity:.85;}
-  .cta-section .btn{background:var(--gold); border-color:var(--gold); color:var(--charcoal);}
-  .cta-section .btn:hover{background:transparent; color:var(--gold);}
-
-  footer{text-align:center; padding:40px 24px; font-size:.8rem; opacity:.6;}
-  footer p{margin:0 0 8px;}
-  footer p:last-child{margin-bottom:0; max-width:70ch; margin-left:auto; margin-right:auto;}
-
-  .reveal{opacity:0; transform:translateY(16px); transition:opacity .6s ease, transform .6s ease;}
-  .reveal.in{opacity:1; transform:translateY(0);}
+@media(max-width:680px){
+  .wrap{padding:0 20px;}
+  .sec{padding:52px 0;}
+  .stat-grid,.tier-grid,.pillars{grid-template-columns:1fr;}
+  .svc-grid,.wax-grid{grid-template-columns:1fr;}
+  .calc-app{grid-template-columns:1fr;}
+  .calc-week{padding-right:0;border-right:none;border-bottom:1px solid var(--rule);padding-bottom:22px;margin-bottom:22px;}
+  .calc-dash{padding-left:0;}
+  .calc-steps{grid-template-columns:1fr;}
+  .days-row{gap:5px;}
+}
 </style>
 </head>
 <body>
 
-<div class="brandline">Cio Bela · Multi-Service Salon · The Woodlands, TX</div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eye">Cio Bela &middot; Multi-Service Salon &middot; The Woodlands, TX</div>
+  <h1 class="hero-title">Build Your<br><em>Lash Artist</em><br>Career Here.</h1>
+  <div class="hero-line"></div>
+  <p class="hero-sub">A full-service salon with an established clientele &mdash; and a growth path built around your income, not our overhead.</p>
+  <p class="hero-loc">Pro-Artist Profit Path &middot; Lash Specialist Position</p>
+</section>
 
-<main>
-
-<header class="hero wrap">
-  <span class="eyebrow">Pro-Artist Profit Path · Lash Specialist Position</span>
-  <h1>Build Your <em>Lash Artist</em> Career Here.</h1>
-  <p class="sub">A full-service salon with an established clientele — and a growth path built around your income, not our overhead.</p>
-</header>
-
-<div class="stats-outer">
-  <div class="wrap">
-    <div class="stats">
-      <div class="stat"><div class="num">5+</div><div class="label">Active service categories under one roof</div></div>
-      <div class="stat"><div class="num">11+</div><div class="label">Years of master-level lash expertise leading the brand</div></div>
-      <div class="stat"><div class="num">1:1</div><div class="label">Direct guidance and growth partnership at every tier</div></div>
-      <div class="stat"><div class="num">$50</div><div class="label">Weekly rent to start — rises only as your income does</div></div>
+<!-- ABOUT -->
+<section style="background:var(--cream)">
+  <div class="wrap sec">
+    <div class="sec-lbl">The Salon</div>
+    <h2 class="sec-title">You&rsquo;re not renting a room.<br>You&rsquo;re joining an <em>ecosystem.</em></h2>
+    <p class="body-txt">Cio Bela is a full multi-service salon in The Woodlands, TX &mdash; one of the fastest-growing luxury communities in the country. We are not a suite rental building or an isolated booth. We are a single, cohesive brand with active clients across multiple services, all under one roof.</p>
+    <p class="body-txt">When you join as our lash specialist, you step into an existing stream of foot traffic and cross-service referrals from day one. Our hair, nail, waxing, and tanning clients are already here &mdash; and they will become your lash clients too.</p>
+    <div class="stat-grid">
+      <div class="about-stat"><div class="about-num">5<em>+</em></div><div class="about-lbl">Active service categories under one roof</div></div>
+      <div class="about-stat"><div class="about-num">11<em>+</em></div><div class="about-lbl">Years of master-level lash expertise leading the brand</div></div>
+      <div class="about-stat"><div class="about-num">1<em>:1</em></div><div class="about-lbl">Direct guidance and growth partnership at every tier</div></div>
+      <div class="about-stat"><div class="about-num"><em>$50</em></div><div class="about-lbl">Weekly rent to start &mdash; rises only as your income does</div></div>
     </div>
   </div>
-</div>
+</section>
 
+<!-- CALCULATOR -->
 <section>
-  <div class="wrap">
-    <span class="eyebrow">The Salon</span>
-    <div class="prose-block reveal">
-      <h2>You're not renting a room. You're joining an <em>ecosystem.</em></h2>
-      <p>Cio Bela is a full multi-service salon in The Woodlands, TX — one of the fastest-growing luxury communities in the country. We are not a suite rental building or an isolated booth. We are a single, cohesive brand with active clients across multiple services, all under one roof.</p>
-      <p>When you join as our lash specialist, you step into an existing stream of foot traffic and cross-service referrals from day one. Our hair, nail, waxing, and tanning clients are already here — and they will become your lash clients too.</p>
+  <div class="calc-intro">
+    <div style="font-size:10px;letter-spacing:5px;text-transform:uppercase;color:rgba(245,240,232,0.4);margin-bottom:14px;">Try It Now &middot; Interactive Tool</div>
+    <h2>What would <em>your week</em> actually earn?</h2>
+    <p>Build a hypothetical work week service by service. Your income, take-home pay, and annual projection update in real time.</p>
+    <div class="calc-steps">
+      <div class="calc-step"><div class="calc-step-n">01</div><div class="calc-step-t">Tap + on any day</div><div class="calc-step-d">Pick a service from the list.</div></div>
+      <div class="calc-step"><div class="calc-step-n">02</div><div class="calc-step-t">Confirm the price</div><div class="calc-step-d">Edit to match your rates.</div></div>
+      <div class="calc-step"><div class="calc-step-n">03</div><div class="calc-step-t">Watch the numbers</div><div class="calc-step-d">Income and tier update live.</div></div>
+    </div>
+    <div class="calc-arrow">&#8595; build your week below &#8595;</div>
+  </div>
+  <div class="calc-body">
+    <div class="calc-app">
+      <div class="calc-week">
+        <div class="c-lbl">Your Hypothetical Work Week</div>
+        <div class="days-row" id="DG"></div>
+        <p class="hint-sm">Tap <b style="color:rgba(201,169,110,0.5)">+</b> on any day to add a service.</p>
+      </div>
+      <div class="calc-dash">
+        <div class="c-lbl">Your Numbers</div>
+        <div class="ds"><div class="ds-lbl">Weekly Gross</div><div class="ds-val" id="SG">$0</div><div class="ds-sub" id="SC">0 services this week</div></div>
+        <div class="ds"><div class="ds-lbl">Weekly Net (after rent)</div><div class="ds-val g" id="SN">$0</div><div class="ds-sub" id="SR">Rent: $50/wk at Tier One</div></div>
+        <div class="ds"><div class="ds-lbl">Annual Gross</div><div class="ds-val" id="SA">$0</div><div class="ds-sub">52 weeks at this pace</div></div>
+        <div class="tbadge" id="ST">Tier One &middot; Foundation Phase</div>
+        <div class="prog-row"><span id="SPL">$0 / wk</span><span id="SPR">Next tier at $701</span></div>
+        <div class="prog-tr"><div class="prog-fill" id="SPB"></div></div>
+        <div class="prog-msg" id="SPM">Add <b>$701</b> more/wk to reach Tier Two.</div>
+        <div class="bkwrap" id="SBK" style="display:none"><div class="bklbl">This Week</div><div id="SBKL"></div></div>
+        <div class="emptyhint" id="SEM">Tap + to start building your week.</div>
+        <button class="resetbtn" id="BRST">&#8635; Clear Week</button>
+      </div>
     </div>
   </div>
-</section>
-
-<section class="section-alt">
-  <div class="wrap">
-    <div class="calc-head reveal">
-      <span class="eyebrow">Try It Now · Interactive Tool</span>
-      <h2>What would <em>your week</em> actually earn?</h2>
-      <p>Build a hypothetical work week service by service. Your income, take-home pay, and annual projection update in real time.</p>
-    </div>
-
-    <div class="steps reveal">
-      <div class="step"><div class="n">01</div><div class="t">Tap + on any day</div><div class="d">Pick a service from the list.</div></div>
-      <div class="step"><div class="n">02</div><div class="t">Confirm the price</div><div class="d">Edit to match your rates.</div></div>
-      <div class="step"><div class="n">03</div><div class="t">Watch the numbers</div><div class="d">Income and tier update live.</div></div>
-    </div>
-
-    <p class="scroll-cue">↓ build your week below ↓</p>
-
-    <div class="calc-panel reveal">
-      <h3>Your Hypothetical Work Week</h3>
-      <p class="hint">Tap + on any day to add a service. Prices start at Cio Bela's current rates — edit any of them to match your own.</p>
-
-      <div class="week-grid">
-        <div class="day-col" data-day="Mon">
-          <div class="day-head"><span class="day-name">Mon</span>
-            <div class="day-btns">
-              <button type="button" class="day-btn plus" data-day="Mon" aria-label="Add a service on Monday">+</button>
-              <button type="button" class="day-btn minus" data-day="Mon" aria-label="Remove last service on Monday">&minus;</button>
-            </div>
-          </div>
-          <div class="row-list"></div>
-        </div>
-        <div class="day-col" data-day="Tue">
-          <div class="day-head"><span class="day-name">Tue</span>
-            <div class="day-btns">
-              <button type="button" class="day-btn plus" data-day="Tue" aria-label="Add a service on Tuesday">+</button>
-              <button type="button" class="day-btn minus" data-day="Tue" aria-label="Remove last service on Tuesday">&minus;</button>
-            </div>
-          </div>
-          <div class="row-list"></div>
-        </div>
-        <div class="day-col" data-day="Wed">
-          <div class="day-head"><span class="day-name">Wed</span>
-            <div class="day-btns">
-              <button type="button" class="day-btn plus" data-day="Wed" aria-label="Add a service on Wednesday">+</button>
-              <button type="button" class="day-btn minus" data-day="Wed" aria-label="Remove last service on Wednesday">&minus;</button>
-            </div>
-          </div>
-          <div class="row-list"></div>
-        </div>
-        <div class="day-col" data-day="Thu">
-          <div class="day-head"><span class="day-name">Thu</span>
-            <div class="day-btns">
-              <button type="button" class="day-btn plus" data-day="Thu" aria-label="Add a service on Thursday">+</button>
-              <button type="button" class="day-btn minus" data-day="Thu" aria-label="Remove last service on Thursday">&minus;</button>
-            </div>
-          </div>
-          <div class="row-list"></div>
-        </div>
-        <div class="day-col" data-day="Fri">
-          <div class="day-head"><span class="day-name">Fri</span>
-            <div class="day-btns">
-              <button type="button" class="day-btn plus" data-day="Fri" aria-label="Add a service on Friday">+</button>
-              <button type="button" class="day-btn minus" data-day="Fri" aria-label="Remove last service on Friday">&minus;</button>
-            </div>
-          </div>
-          <div class="row-list"></div>
-        </div>
+  <div class="modal-ov" id="MOD">
+    <div class="modal-box">
+      <div class="mscr" id="SCR1">
+        <div class="meye" id="MDAY">Adding to Mon</div>
+        <div class="mhead">Choose a Service</div>
+        <div id="MLST"></div>
+        <button class="cancelbtn" id="BCAN">Cancel</button>
       </div>
-      <p class="week-caption">Tap + on any day to add a service.</p>
-
-      <div class="numbers-grid">
-        <div class="number-card">
-          <div class="label">Weekly Gross</div>
-          <div class="value" id="sumGross">$0</div>
-          <div class="sub" id="sumGrossSub">0 services this week</div>
-        </div>
-        <div class="number-card">
-          <div class="label">Weekly Net (after rent)</div>
-          <div class="value" id="sumNet">$0</div>
-          <div class="sub" id="sumNetSub">Rent: $50/wk at this tier</div>
-        </div>
-        <div class="number-card">
-          <div class="label">Annual Gross</div>
-          <div class="value" id="sumAnnual">$0</div>
-          <div class="sub">52 weeks at this pace</div>
-        </div>
-      </div>
-
-      <div class="tier-block">
-        <div class="tier-name" id="tierName">Tier One · Foundation</div>
-        <div class="tier-bar-wrap"><div class="tier-bar-track"><div class="tier-bar-fill" id="tierFill"></div></div></div>
-        <div class="tier-endpoints"><span id="tierEndLow">$0 / wk</span><span id="tierEndHigh">Tier Two at $701</span></div>
-        <p class="tier-note" id="tierNote">Tap + to start building your week.</p>
-      </div>
-
-      <button type="button" class="clear-btn" id="clearWeekBtn">&#8634; Clear Week</button>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="grid-head reveal">
-      <span class="eyebrow">Our Current Services</span>
-      <h2>The clientele is already <em>here.</em></h2>
-      <p>These are the services Cio Bela already provides. Clients are already here for every service below. And our founder's own lash calendar is proof of how deep the demand for a lash specialist really runs.</p>
-    </div>
-
-    <div class="cards reveal">
-      <div class="card">
-        <div class="tag">Hair</div>
-        <h3>Hair Services</h3>
-        <p>Extensions, chemical treatments, blonding, smoothing, cuts, color, and styling. A full hair menu with an established, returning book of clients.</p>
-      </div>
-      <div class="card">
-        <div class="tag">Nails</div>
-        <h3>Nail Services</h3>
-        <p>Premium nail menu including Russian Manicure and SMART dry pedicure — high-ticket services rare in this market, actively drawing new clientele.</p>
-      </div>
-      <div class="card">
-        <div class="tag">Waxing</div>
-        <h3>Waxing Services</h3>
-        <p>Brazilian, bikini, face, and body waxing from a specialized team — a high-frequency, high-retention category with clients returning every 3–5 weeks.</p>
-      </div>
-      <div class="card">
-        <div class="tag">Tanning</div>
-        <h3>Tanning Beds</h3>
-        <p>Sunbed tanning services that bring clients into the building on a consistent, recurring basis — warm leads for lash referrals.</p>
-      </div>
-    </div>
-
-    <p class="below-grid-note reveal">Every hair, nail, waxing, and tanning client is a potential lash client — and our founder's own lash clientele is already proof of the demand. The referral pipeline is <strong>already built</strong>, and the demand is <strong>already proven</strong>. This is what makes Cio Bela fundamentally different from a booth or suite rental. <strong>You're not starting from zero — you're stepping into overflow.</strong></p>
-  </div>
-</section>
-
-<section class="section-alt">
-  <div class="wrap">
-    <div class="grid-head reveal">
-      <span class="eyebrow">Lash Menu · Cio Bela Pricing · The Woodlands, TX</span>
-      <h2>What clients <em>already pay</em> — for the seat you'd fill.</h2>
-      <p>Cio Bela's current lash pricing. Lash is a high-frequency, high-retention specialty — once a client finds their artist, they return every 2–3 weeks without fail.</p>
-    </div>
-
-    <div class="price-cards reveal">
-      <div class="price-card">
-        <h3>Classic Full Set</h3>
-        <div class="desc">Natural definition · our most timeless look</div>
-        <div class="price">$95</div>
-        <div class="unit">per full set</div>
-      </div>
-      <div class="price-card">
-        <h3>Hybrid Full Set</h3>
-        <div class="desc">Classic + volume blend · our most-booked style</div>
-        <div class="price">$115</div>
-        <div class="unit">per full set</div>
-      </div>
-      <div class="price-card">
-        <h3>Volume Full Set</h3>
-        <div class="desc">Maximum drama · handmade fans, fully customized</div>
-        <div class="price">$150</div>
-        <div class="unit">per full set</div>
-      </div>
-      <div class="price-card">
-        <h3>2-Week Refill</h3>
-        <div class="desc">Across every style · most clients' rhythm</div>
-        <div class="price">$53&ndash;$79</div>
-        <div class="unit">per refill</div>
-      </div>
-      <div class="price-card">
-        <h3>3-Week Refill</h3>
-        <div class="desc">Across every style · for a longer stretch</div>
-        <div class="price">$72&ndash;$99</div>
-        <div class="unit">per refill</div>
-      </div>
-      <div class="price-card">
-        <h3>UV-Cured Upgrade</h3>
-        <div class="desc">Instant cure, zero downtime · always optional</div>
-        <div class="price">+$11&ndash;$30</div>
-        <div class="unit">on any set</div>
-      </div>
-    </div>
-    <p class="price-note">*Shown as a reference based on Cio Bela's current lash pricing. As an independent 1099 artist, you set your own service rates.</p>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <span class="eyebrow">Pro-Artist Profit Path · Full Breakdown</span>
-    <div class="prose-block reveal">
-      <h2>Complete transparency on <em>income &amp; rent.</em></h2>
-      <p>Your rent rises only when your income rises — never before. Service counts based on a blended average of ~$93 per lash appointment, mixing full sets and refills across all three styles.</p>
-    </div>
-
-    <div class="table-wrap reveal">
-      <table>
-        <thead>
-          <tr><th>Weekly Gross</th><th>Annual Income</th><th>Approx. Services</th><th>Weekly Rent</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>$0 &ndash; $700</td><td>$0 &ndash; $36,400</td><td>0 &ndash; 7</td><td>$50</td></tr>
-          <tr><td>$701 &ndash; $1,000</td><td>$36,452 &ndash; $52,000</td><td>8 &ndash; 10</td><td>$100</td></tr>
-          <tr><td>$1,001 &ndash; $1,300</td><td>$52,052 &ndash; $67,600</td><td>11 &ndash; 13</td><td>$150</td></tr>
-          <tr><td>$1,301 &ndash; $1,922</td><td>$67,652 &ndash; $99,944</td><td>14 &ndash; 20</td><td>$200</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="table-foot">*Service counts based on a blended average ticket of ~$93, mixing full sets and refills. Actual numbers vary by individual style mix and pricing. Annual figures represent gross revenue annualized over 52 weeks.</p>
-  </div>
-</section>
-
-<section class="section-alt">
-  <div class="wrap">
-    <span class="eyebrow">What We Build Together</span>
-    <div class="prose-block reveal">
-      <h2>Guided <em>growth</em> at every stage.</h2>
-      <p>Each tier comes with a defined growth plan — not just a rent rate. Here's exactly what support looks like at each phase.</p>
-    </div>
-
-    <div class="phases reveal">
-      <div class="phase">
-        <div class="n">01</div>
-        <div class="meta">Gross $0&ndash;$700 · Rent $50/wk</div>
-        <h3>Foundation Phase</h3>
-        <ul>
-          <li>Placement within studio marketing and client referrals</li>
-          <li>Support with service menu clarity and pricing alignment</li>
-          <li>Guidance on booking consistency and client retention</li>
-          <li>Focus on rebooking, referrals, and add-on services</li>
-          <li>Weekly revenue tracking to measure momentum</li>
-        </ul>
-      </div>
-      <div class="phase">
-        <div class="n">02</div>
-        <div class="meta">Gross $701&ndash;$1,000 · Rent $100/wk</div>
-        <h3>Momentum Phase</h3>
-        <ul>
-          <li>Continued client referrals and studio visibility</li>
-          <li>Support in refining service offerings and pricing strategy</li>
-          <li>Guidance on increasing average ticket value</li>
-          <li>Focus on rebooking systems and client loyalty</li>
-        </ul>
-      </div>
-      <div class="phase">
-        <div class="n">03</div>
-        <div class="meta">Gross $1,001&ndash;$1,300 · Rent $150/wk</div>
-        <h3>Established Phase</h3>
-        <ul>
-          <li>Strategic guidance on maximizing schedule efficiency</li>
-          <li>Support in branding, social presence, and client experience</li>
-          <li>Advanced retention and referral strategies</li>
-          <li>Ongoing revenue tracking to ensure readiness for Tier Four</li>
-        </ul>
-      </div>
-      <div class="phase">
-        <div class="n">04</div>
-        <div class="meta">Gross $1,301&ndash;$1,922 · Rent $200/wk</div>
-        <h3>Signature Phase</h3>
-        <ul>
-          <li>Priority placement in studio referrals and opportunities</li>
-          <li>Continued support for brand elevation and expansion</li>
-          <li>Focus on work-life balance and schedule optimization</li>
-          <li>Long-term planning for business sustainability</li>
-        </ul>
+      <div class="mscr" id="SCR2" style="display:none">
+        <div class="meye" id="MPDAY">Adding to Mon</div>
+        <div class="mhead" id="MPNAME">Service</div>
+        <div style="font-size:13px;color:#8C7B6B;margin-bottom:18px;">Confirm or edit the price, then tap Add.</div>
+        <input class="pinput" type="number" inputmode="decimal" id="PINP" />
+        <button class="addbtn-c" id="BADD">Add to Week &#10003;</button>
+        <button class="cancelbtn" id="BBACK">&#8592; Back</button>
       </div>
     </div>
   </div>
 </section>
 
-<section>
-  <div class="wrap">
-    <span class="eyebrow">Why Cio Bela</span>
-    <div class="prose-block reveal">
-      <h2>More than a booth. A <em>partnership.</em></h2>
-      <p>This is not a suite rental. You don't get a room, a key, and a good luck. You get an active partner invested in your growth at every stage.</p>
+<!-- EXISTING SERVICES -->
+<section class="svc-bg">
+  <div class="wrap sec">
+    <div class="sec-lbl">Our Current Services</div>
+    <h2 class="sec-title" style="color:var(--cream)">The clientele<br>is already <em>here.</em></h2>
+    <p class="body-txt">These are the services Cio Bela already provides. Clients are already here for every service below. And our founder&rsquo;s own lash calendar is proof of how deep the demand for a lash specialist really runs.</p>
+    <div class="svc-grid">
+      <div class="svc-card"><div class="svc-tag">Hair</div><div class="svc-name">Hair Services</div><div class="svc-detail">Extensions, chemical treatments, blonding, smoothing, cuts, color, and styling. A full hair menu with an established, returning book of clients.</div></div>
+      <div class="svc-card"><div class="svc-tag">Nails</div><div class="svc-name">Nail Services</div><div class="svc-detail">Premium nail menu including Russian Manicure and SMART dry pedicure &mdash; high-ticket services rare in this market, actively drawing new clientele.</div></div>
+      <div class="svc-card"><div class="svc-tag">Waxing</div><div class="svc-name">Waxing Services</div><div class="svc-detail">Brazilian, bikini, face, and body waxing from a specialized team &mdash; a high-frequency, high-retention category with clients returning every 3&ndash;5 weeks.</div></div>
+      <div class="svc-card"><div class="svc-tag">Tanning</div><div class="svc-name">Tanning Beds</div><div class="svc-detail">Sunbed tanning services that bring clients into the building on a consistent, recurring basis &mdash; warm leads for lash referrals.</div></div>
     </div>
+    <div class="referral-note"><p>Every hair, nail, waxing, and tanning client is a potential lash client &mdash; and our founder&rsquo;s own lash clientele is already proof of the demand. The referral pipeline is <strong>already built</strong>, and the demand is <strong>already proven</strong>. This is what makes Cio Bela fundamentally different from a booth or suite rental. <strong>You&rsquo;re not starting from zero &mdash; you&rsquo;re stepping into overflow.</strong></p></div>
+  </div>
+</section>
 
-    <div class="why-grid reveal">
-      <div class="why-item"><div class="n">01</div><h3>Built-In Clientele</h3><p>Hair, nail, waxing, and tanning clients are already here. Cross-service referrals activate from day one — plus a founder-built lash clientele already asking for a second set of hands.</p></div>
-      <div class="why-item"><div class="n">02</div><h3>Guided Growth</h3><p>1:1 support at every tier — service menu, pricing, rebooking systems, brand visibility, and client retention.</p></div>
-      <div class="why-item"><div class="n">03</div><h3>Income-Scaled Rent</h3><p>Your rent only rises when your income does. You'll never carry full rent before you've built the foundation to support it.</p></div>
-      <div class="why-item"><div class="n">04</div><h3>Luxury Environment</h3><p>A polished, vibrant multi-service salon in The Woodlands attracting quality clientele and giving your brand the space it deserves.</p></div>
-      <div class="why-item"><div class="n">05</div><h3>Shared Marketing</h3><p>Influencer partnerships, cross-service promotions, social presence, and community networking — brand momentum built together.</p></div>
-      <div class="why-item"><div class="n">06</div><h3>Independent Structure</h3><p>1099 independent artist — your schedule, your pricing, your brand. All the freedom without the isolation of going it alone.</p></div>
+<!-- LASH PRICING -->
+<section style="background:var(--cream)">
+  <div class="wrap sec">
+    <div class="sec-lbl">Lash Menu &middot; Cio Bela Pricing &middot; The Woodlands, TX</div>
+    <h2 class="sec-title">What clients<br><em>already pay.</em></h2>
+    <p class="body-txt">Cio Bela&rsquo;s current lash pricing. Lash is a high-frequency, high-retention specialty &mdash; once a client finds their artist, they return every 2&ndash;3 weeks without fail.</p>
+    <div class="wax-grid">
+      <div class="wax-card"><div class="wax-name">Classic Full Set</div><div class="wax-freq">Natural definition &middot; our most timeless look</div><div class="wax-price">$95</div><div class="wax-unit">per full set</div></div>
+      <div class="wax-card"><div class="wax-name">Hybrid Full Set</div><div class="wax-freq">Classic + volume blend &middot; our most-booked style</div><div class="wax-price">$115</div><div class="wax-unit">per full set</div></div>
+      <div class="wax-card"><div class="wax-name">Volume Full Set</div><div class="wax-freq">Maximum drama &middot; handmade fans, fully customized</div><div class="wax-price">$150</div><div class="wax-unit">per full set</div></div>
+      <div class="wax-card"><div class="wax-name">2-Week Refill</div><div class="wax-freq">Across every style &middot; most clients&rsquo; rhythm</div><div class="wax-price">$53&ndash;$79</div><div class="wax-unit">per refill</div></div>
+      <div class="wax-card"><div class="wax-name">3-Week Refill</div><div class="wax-freq">Across every style &middot; for a longer stretch</div><div class="wax-price">$72&ndash;$99</div><div class="wax-unit">per refill</div></div>
+      <div class="wax-card"><div class="wax-name">UV-Cured Upgrade</div><div class="wax-freq">Instant cure, zero downtime &middot; always optional</div><div class="wax-price">+$11&ndash;$30</div><div class="wax-unit">on any set</div></div>
+    </div>
+    <p class="price-fn">*Shown as a reference based on Cio Bela&rsquo;s current lash pricing. As an independent 1099 artist, you set your own service rates.</p>
+  </div>
+</section>
+
+<!-- PROFIT PATH -->
+<section class="profit-bg">
+  <div class="wrap sec">
+    <div class="sec-lbl">Pro-Artist Profit Path &middot; Full Breakdown</div>
+    <h2 class="sec-title">Complete transparency<br>on <em>income &amp; rent.</em></h2>
+    <p class="body-txt">Your rent rises only when your income rises &mdash; never before. Service counts based on a blended average of ~$93 per lash appointment, mixing full sets and refills across all three styles.</p>
+    <table class="profit-table">
+      <thead><tr><th>Weekly Gross</th><th>Annual Income</th><th>Approx. Services</th><th>Weekly Rent</th></tr></thead>
+      <tbody>
+        <tr><td>$0 &ndash; $700</td><td class="annual">$0 &ndash; $36,400</td><td class="svc">0 &ndash; 7</td><td class="rent">$50</td></tr>
+        <tr><td>$701 &ndash; $1,000</td><td class="annual">$36,452 &ndash; $52,000</td><td class="svc">8 &ndash; 10</td><td class="rent">$100</td></tr>
+        <tr><td>$1,001 &ndash; $1,300</td><td class="annual">$52,052 &ndash; $67,600</td><td class="svc">11 &ndash; 13</td><td class="rent">$150</td></tr>
+        <tr class="top"><td>$1,301 &ndash; $1,922</td><td class="annual">$67,652 &ndash; $99,944</td><td class="svc">14 &ndash; 20</td><td class="rent">$200</td></tr>
+      </tbody>
+    </table>
+    <p class="profit-fn">*Service counts based on a blended average ticket of ~$93, mixing full sets and refills. Actual numbers vary by individual style mix and pricing. Annual figures represent gross revenue annualized over 52 weeks.</p>
+  </div>
+</section>
+
+<!-- TIER DETAIL -->
+<section style="background:var(--cream)">
+  <div class="wrap sec">
+    <div class="sec-lbl">What We Build Together</div>
+    <h2 class="sec-title">Guided growth<br>at <em>every stage.</em></h2>
+    <p class="body-txt">Each tier comes with a defined growth plan &mdash; not just a rent rate. Here&rsquo;s exactly what support looks like at each phase.</p>
+    <div class="tier-grid">
+      <div class="tier-card feat"><div class="tier-num">01</div><div class="tier-gross">Gross $0&ndash;$700 &middot; Rent $50/wk</div><div class="tier-name">Foundation <em>Phase</em></div><ul class="tier-list"><li>Placement within studio marketing and client referrals</li><li>Support with service menu clarity and pricing alignment</li><li>Guidance on booking consistency and client retention</li><li>Focus on rebooking, referrals, and add-on services</li><li>Weekly revenue tracking to measure momentum</li></ul></div>
+      <div class="tier-card"><div class="tier-num">02</div><div class="tier-gross">Gross $701&ndash;$1,000 &middot; Rent $100/wk</div><div class="tier-name">Momentum <em>Phase</em></div><ul class="tier-list"><li>Continued client referrals and studio visibility</li><li>Support in refining service offerings and pricing strategy</li><li>Guidance on increasing average ticket value</li><li>Focus on rebooking systems and client loyalty</li></ul></div>
+      <div class="tier-card"><div class="tier-num">03</div><div class="tier-gross">Gross $1,001&ndash;$1,300 &middot; Rent $150/wk</div><div class="tier-name">Established <em>Phase</em></div><ul class="tier-list"><li>Strategic guidance on maximizing schedule efficiency</li><li>Support in branding, social presence, and client experience</li><li>Advanced retention and referral strategies</li><li>Ongoing revenue tracking to ensure readiness for Tier Four</li></ul></div>
+      <div class="tier-card feat"><div class="tier-num">04</div><div class="tier-gross">Gross $1,301&ndash;$1,922 &middot; Rent $200/wk</div><div class="tier-name">Signature <em>Phase</em></div><ul class="tier-list"><li>Priority placement in studio referrals and opportunities</li><li>Continued support for brand elevation and expansion</li><li>Focus on work-life balance and schedule optimization</li><li>Long-term planning for business sustainability</li></ul></div>
     </div>
   </div>
 </section>
 
-<section class="cta-section">
-  <div class="wrap">
-    <span class="eyebrow">Join Cio Bela</span>
-    <h2>Your next chapter starts at <em>Cio Bela.</em></h2>
-    <p>If you're a licensed lash artist ready to build a loyal, profitable book of business inside one of The Woodlands' only true multi-service salons, we want to connect today.</p>
-    <a class="btn" href="https://www.ciobelasalons.com/join-our-team">Apply Now · Join Our Team</a>
+<!-- WHY CIO BELA -->
+<section class="why-bg">
+  <div class="wrap sec">
+    <div class="sec-lbl">Why Cio Bela</div>
+    <h2 class="sec-title">More than a booth.<br>A <em>partnership.</em></h2>
+    <p class="body-txt">This is not a suite rental. You don&rsquo;t get a room, a key, and a good luck. You get an active partner invested in your growth at every stage.</p>
+    <div class="pillars">
+      <div class="pillar"><div class="pillar-num">01</div><div class="pillar-title">Built-In Clientele</div><div class="pillar-txt">Hair, nail, waxing, and tanning clients are already here. Cross-service referrals activate from day one &mdash; plus a founder-built lash clientele already asking for a second set of hands.</div></div>
+      <div class="pillar"><div class="pillar-num">02</div><div class="pillar-title">Guided Growth</div><div class="pillar-txt">1:1 support at every tier &mdash; service menu, pricing, rebooking systems, brand visibility, and client retention.</div></div>
+      <div class="pillar"><div class="pillar-num">03</div><div class="pillar-title">Income-Scaled Rent</div><div class="pillar-txt">Your rent only rises when your income does. You&rsquo;ll never carry full rent before you&rsquo;ve built the foundation to support it.</div></div>
+      <div class="pillar"><div class="pillar-num">04</div><div class="pillar-title">Luxury Environment</div><div class="pillar-txt">A polished, vibrant multi-service salon in The Woodlands attracting quality clientele and giving your brand the space it deserves.</div></div>
+      <div class="pillar"><div class="pillar-num">05</div><div class="pillar-title">Shared Marketing</div><div class="pillar-txt">Influencer partnerships, cross-service promotions, social presence, and community networking &mdash; brand momentum built together.</div></div>
+      <div class="pillar"><div class="pillar-num">06</div><div class="pillar-title">Independent Structure</div><div class="pillar-txt">1099 independent artist &mdash; your schedule, your pricing, your brand. All the freedom without the isolation of going it alone.</div></div>
+    </div>
   </div>
 </section>
 
-</main>
+<!-- CTA -->
+<section class="cta-bg">
+  <div class="cta-lbl">Join Cio Bela</div>
+  <h2 class="cta-title">Your next chapter<br>starts at <em>Cio Bela.</em></h2>
+  <p class="cta-sub">If you&rsquo;re a licensed lash artist ready to build a loyal, profitable book of business inside one of The Woodlands&rsquo; only true multi-service salons, we want to connect today.</p>
+  <a class="cta-btn" href="https://www.ciobelasalons.com/join-our-team" target="_blank">Apply Now &middot; Join Our Team</a>
+</section>
 
-<footer>
-  <p>Cio Bela Salon · The Woodlands, Texas · ciobelasalons.com</p>
-  <p>All pricing reflects Cio Bela's current lash menu and is subject to change. Income estimates are gross and do not account for product costs or other individual artist expenses.</p>
-</footer>
+<p class="footnote">Cio Bela Salon &middot; The Woodlands, Texas &middot; ciobelasalons.com<br>All pricing reflects Cio Bela&rsquo;s current lash menu and is subject to change. Income estimates are gross and do not account for product costs or other individual artist expenses.</p>
 
 <script>
-(function(){
-  'use strict';
+var SVCS=[
+  {name:"Classic Full Set",time:"2-2.5 hrs",price:95},
+  {name:"Classic 2-Wk Refill",time:"45-60 min",price:53},
+  {name:"Classic 3-Wk Refill",time:"60-75 min",price:72},
+  {name:"Hybrid Full Set",time:"2-2.5 hrs",price:115},
+  {name:"Hybrid 2-Wk Refill",time:"60-75 min",price:69},
+  {name:"Hybrid 3-Wk Refill",time:"75-90 min",price:89},
+  {name:"Volume Full Set",time:"2.5-3 hrs",price:150},
+  {name:"Volume 2-Wk Refill",time:"75-90 min",price:79},
+  {name:"Volume 3-Wk Refill",time:"90-105 min",price:99}
+];
+var TIERS=[
+  {num:1,label:"Tier One - Foundation",min:0,max:700,rent:50,next:"Tier Two",at:701},
+  {num:2,label:"Tier Two - Momentum",min:701,max:1000,rent:100,next:"Tier Three",at:1001},
+  {num:3,label:"Tier Three - Established",min:1001,max:1300,rent:150,next:"Tier Four",at:1301},
+  {num:4,label:"Tier Four - Signature",min:1301,max:99999,rent:200,next:null,at:null}
+];
+var DAYS=["Mon","Tue","Wed","Thu","Fri"];
+var week=[[],[],[],[],[]];
+var pDay=-1,pSvc=null;
 
-  var SERVICES = [
-    { id:'classic-full',    name:'Classic Full Set', price:95 },
-    { id:'classic-refill',  name:'Classic Refill',   price:53 },
-    { id:'hybrid-full',     name:'Hybrid Full Set',  price:115 },
-    { id:'hybrid-refill',   name:'Hybrid Refill',    price:69 },
-    { id:'volume-full',     name:'Volume Full Set',  price:150 },
-    { id:'volume-refill',   name:'Volume Refill',    price:79 }
-  ];
+function ge(id){return document.getElementById(id);}
 
-  var TIERS = [
-    { label:'Tier One · Foundation',   short:'Tier One',   min:0,    max:700,  rent:50  },
-    { label:'Tier Two · Momentum',     short:'Tier Two',   min:701,  max:1000, rent:100 },
-    { label:'Tier Three · Established',short:'Tier Three', min:1001, max:1300, rent:150 },
-    { label:'Tier Four · Signature',   short:'Tier Four',  min:1301, max:1922, rent:200 }
-  ];
-
-  var DAYS = ['Mon','Tue','Wed','Thu','Fri'];
-  var week = { Mon:[], Tue:[], Wed:[], Thu:[], Fri:[] };
-  var uid = 0;
-
-  function fmtMoney(n){
-    return '$' + Math.round(n).toLocaleString('en-US');
+function buildGrid(){
+  var g=ge("DG");g.innerHTML="";
+  for(var i=0;i<5;i++){
+    var c=document.createElement("div");
+    c.className="dcol";c.id="DC"+i;
+    c.innerHTML='<div class="dhdr">'+DAYS[i]+'</div>';
+    g.appendChild(c);
   }
+  renderAll();
+}
 
-  function serviceById(id){
-    for (var i=0; i<SERVICES.length; i++){ if (SERVICES[i].id === id) return SERVICES[i]; }
-    return SERVICES[0];
-  }
+function renderAll(){for(var i=0;i<5;i++)renderDay(i);dash();}
 
-  function tierForGross(gross){
-    for (var i=0; i<TIERS.length; i++){ if (gross <= TIERS[i].max) return TIERS[i]; }
-    return TIERS[TIERS.length - 1];
-  }
-
-  function totalGross(){
-    var sum = 0, count = 0;
-    DAYS.forEach(function(d){
-      week[d].forEach(function(r){ sum += r.price; count++; });
+function renderDay(i){
+  var col=ge("DC"+i);
+  var h=col.querySelector(".dhdr");
+  col.innerHTML="";col.appendChild(h);
+  for(var e=0;e<week[i].length;e++){
+    var ch=document.createElement("div");ch.className="chip";
+    var sp=document.createElement("span");sp.className="chip-p";sp.textContent="$"+week[i][e].price;
+    var xb=document.createElement("button");xb.className="chip-x";xb.innerHTML="&times;";
+    xb.setAttribute("data-i",i);xb.setAttribute("data-e",e);
+    xb.addEventListener("click",function(){
+      week[+this.getAttribute("data-i")].splice(+this.getAttribute("data-e"),1);
+      renderAll();
     });
-    return { sum:sum, count:count };
+    ch.appendChild(sp);ch.appendChild(xb);col.appendChild(ch);
   }
+  var ab=document.createElement("button");ab.className="addbtn";ab.textContent="+";
+  ab.setAttribute("data-i",i);
+  ab.addEventListener("click",function(){openMod(+this.getAttribute("data-i"));});
+  col.appendChild(ab);
+  var tot=0;for(var e=0;e<week[i].length;e++)tot+=week[i][e].price;
+  var td=document.createElement("div");td.className=tot===0?"dttl z":"dttl";td.textContent=tot===0?"-":"$"+tot;
+  col.appendChild(td);
+}
 
-  function serviceOptionsHtml(selectedId){
-    return SERVICES.map(function(s){
-      return '<option value="' + s.id + '"' + (s.id === selectedId ? ' selected' : '') + '>' + s.name + '</option>';
-    }).join('');
+function dash(){
+  var all=[];for(var i=0;i<5;i++)for(var e=0;e<week[i].length;e++)all.push(week[i][e]);
+  var gross=0;for(var i=0;i<all.length;i++)gross+=all[i].price;
+  var n=all.length;
+  var tier=TIERS[0];
+  for(var i=0;i<TIERS.length;i++){if(gross>=TIERS[i].min&&gross<=TIERS[i].max){tier=TIERS[i];break;}}
+  var net=Math.max(0,gross-tier.rent);
+  ge("SG").textContent="$"+gross.toLocaleString();
+  ge("SN").textContent="$"+net.toLocaleString();
+  ge("SA").textContent="$"+(gross*52).toLocaleString();
+  ge("SC").textContent=n+" service"+(n!==1?"s":"")+" this week";
+  ge("SR").textContent="Rent: $"+tier.rent+"/wk at this tier";
+  var b=ge("ST");b.textContent=tier.label;b.className=tier.num===4?"tbadge top":"tbadge";
+  if(tier.num<4){
+    var pct=Math.min(100,((gross-tier.min)/(tier.at-tier.min))*100);
+    ge("SPB").style.width=pct+"%";
+    ge("SPL").textContent="$"+gross.toLocaleString()+" / wk";
+    ge("SPR").textContent=tier.next+" at $"+tier.at.toLocaleString();
+    ge("SPM").innerHTML="Add <b>$"+(tier.at-gross).toLocaleString()+"</b> more/wk to reach "+tier.next+".";
+  }else{
+    ge("SPB").style.width="100%";
+    ge("SPL").textContent="$"+gross.toLocaleString()+" / wk";
+    ge("SPR").textContent="Signature Tier";
+    ge("SPM").innerHTML='<b style="color:#C9A96E">Top tier reached.</b>';
   }
-
-  function renderDay(day){
-    var col = document.querySelector('.day-col[data-day="' + day + '"]');
-    if (!col) return;
-    var list = col.querySelector('.row-list');
-    var rows = week[day];
-    if (rows.length === 0){
-      list.innerHTML = '<p class="empty-hint">No services yet.</p>';
-    } else {
-      list.innerHTML = rows.map(function(r){
-        return (
-          '<div class="week-row">' +
-            '<select class="row-service" data-day="' + day + '" data-row-id="' + r.uid + '" aria-label="Service">' +
-              serviceOptionsHtml(r.serviceId) +
-            '</select>' +
-            '<div class="row-price-wrap">' +
-              '<span class="cur">$</span>' +
-              '<input type="number" class="row-price" min="0" step="1" value="' + r.price + '" data-day="' + day + '" data-row-id="' + r.uid + '" aria-label="Price">' +
-            '</div>' +
-          '</div>'
-        );
-      }).join('');
-    }
-    var minusBtn = col.querySelector('.day-btn.minus');
-    if (minusBtn) minusBtn.disabled = rows.length === 0;
+  var bk=ge("SBK"),em=ge("SEM");
+  if(n===0){bk.style.display="none";em.style.display="block";return;}
+  em.style.display="none";bk.style.display="block";
+  var cts={};
+  for(var i=0;i<all.length;i++){var nm=all[i].service.name;if(!cts[nm])cts[nm]={c:0,t:0};cts[nm].c++;cts[nm].t+=all[i].price;}
+  var bl=ge("SBKL");bl.innerHTML="";
+  var ks=Object.keys(cts).sort(function(a,b){return cts[b].t-cts[a].t;});
+  for(var k=0;k<ks.length;k++){
+    var r=document.createElement("div");r.className="bkrow";
+    r.innerHTML='<span class="bkname">'+ks[k]+'</span><span class="bkct">x'+cts[ks[k]].c+'</span><span class="bkamt">$'+cts[ks[k]].t+'</span>';
+    bl.appendChild(r);
   }
+}
 
-  function renderAllDays(){ DAYS.forEach(renderDay); }
-
-  function updateSummary(){
-    var t = totalGross();
-    var gross = t.sum;
-    var tier = tierForGross(gross);
-    var net = gross - tier.rent;
-    var annual = gross * 52;
-
-    document.getElementById('sumGross').textContent = fmtMoney(gross);
-    document.getElementById('sumGrossSub').textContent = t.count + (t.count === 1 ? ' service' : ' services') + ' this week';
-    document.getElementById('sumNet').textContent = fmtMoney(net);
-    document.getElementById('sumNetSub').textContent = 'Rent: $' + tier.rent + '/wk at this tier';
-    document.getElementById('sumAnnual').textContent = fmtMoney(annual);
-    document.getElementById('tierName').textContent = tier.label;
-
-    var idx = TIERS.indexOf(tier);
-    var nextTier = TIERS[idx + 1] || null;
-
-    var endLow = document.getElementById('tierEndLow');
-    var endHigh = document.getElementById('tierEndHigh');
-    var noteEl = document.getElementById('tierNote');
-    var fillPct;
-
-    endLow.textContent = fmtMoney(gross) + ' / wk';
-
-    if (gross === 0){
-      fillPct = 0;
-      endHigh.textContent = nextTier ? (nextTier.short + ' at $' + nextTier.min.toLocaleString('en-US')) : 'Top tier';
-      noteEl.textContent = 'Tap + to start building your week.';
-    } else if (nextTier){
-      var span = nextTier.min - tier.min;
-      fillPct = span > 0 ? Math.min(100, Math.max(0, ((gross - tier.min) / span) * 100)) : 100;
-      endHigh.textContent = nextTier.short + ' at $' + nextTier.min.toLocaleString('en-US');
-      var remaining = nextTier.min - gross;
-      noteEl.textContent = remaining > 0
-        ? ('Add ' + fmtMoney(remaining) + ' more/wk to reach ' + nextTier.short + '.')
-        : ('You\'re right at the edge of ' + nextTier.short + '.');
-    } else {
-      fillPct = 100;
-      endHigh.textContent = 'Top tier reached';
-      noteEl.textContent = 'Rent holds at $' + tier.rent + '/wk no matter how high you grow from here.';
-    }
-
-    document.getElementById('tierFill').style.width = fillPct + '%';
+function openMod(i){
+  pDay=i;
+  ge("MDAY").textContent="Adding to "+DAYS[i];
+  ge("SCR1").style.display="block";ge("SCR2").style.display="none";
+  var list=ge("MLST");list.innerHTML="";
+  for(var s=0;s<SVCS.length;s++){
+    var svc=SVCS[s];
+    var opt=document.createElement("div");opt.className="sopt";
+    opt.innerHTML='<div><div class="sopt-name">'+svc.name+'</div><div class="sopt-time">'+svc.time+'</div></div><div class="sopt-price">$'+svc.price+'</div>';
+    opt.setAttribute("data-s",s);
+    opt.addEventListener("click",function(){pickSvc(SVCS[+this.getAttribute("data-s")]);});
+    list.appendChild(opt);
   }
+  ge("MOD").className="modal-ov open";
+}
 
-  function addRow(day){
-    week[day].push({ uid: uid++, serviceId: SERVICES[0].id, price: SERVICES[0].price });
-    renderDay(day);
-    updateSummary();
-  }
+function pickSvc(svc){
+  pSvc=svc;
+  ge("MPDAY").textContent="Adding to "+DAYS[pDay];
+  ge("MPNAME").textContent=svc.name;
+  ge("PINP").value=svc.price;
+  ge("PINP").style.borderColor="#C9A96E";
+  ge("SCR1").style.display="none";ge("SCR2").style.display="block";
+}
 
-  function removeLastRow(day){
-    if (week[day].length === 0) return;
-    week[day].pop();
-    renderDay(day);
-    updateSummary();
-  }
+function doAdd(){
+  var v=parseFloat(ge("PINP").value);
+  if(isNaN(v)||v<0){ge("PINP").style.borderColor="#e06060";return;}
+  week[pDay].push({service:pSvc,price:v});
+  closeMod();renderAll();
+}
 
-  function clearWeek(){
-    DAYS.forEach(function(d){ week[d] = []; });
-    renderAllDays();
-    updateSummary();
-  }
+function closeMod(){ge("MOD").className="modal-ov";pDay=-1;pSvc=null;}
 
-  document.addEventListener('click', function(e){
-    var plus = e.target.closest('.day-btn.plus');
-    if (plus){ addRow(plus.getAttribute('data-day')); return; }
-    var minus = e.target.closest('.day-btn.minus');
-    if (minus){ removeLastRow(minus.getAttribute('data-day')); return; }
-    var clearBtn = e.target.closest('#clearWeekBtn');
-    if (clearBtn){ clearWeek(); return; }
-  });
+ge("BADD").addEventListener("click",doAdd);
+ge("BCAN").addEventListener("click",closeMod);
+ge("BBACK").addEventListener("click",function(){ge("SCR2").style.display="none";ge("SCR1").style.display="block";pSvc=null;});
+ge("BRST").addEventListener("click",function(){week=[[],[],[],[],[]];renderAll();});
+ge("MOD").addEventListener("click",function(e){if(e.target===this)closeMod();});
 
-  document.addEventListener('change', function(e){
-    if (e.target.classList.contains('row-service')){
-      var day = e.target.getAttribute('data-day');
-      var rowId = Number(e.target.getAttribute('data-row-id'));
-      var row = week[day].filter(function(r){ return r.uid === rowId; })[0];
-      if (row){
-        row.serviceId = e.target.value;
-        row.price = serviceById(e.target.value).price;
-        renderDay(day);
-        updateSummary();
-      }
-    }
-  });
-
-  document.addEventListener('input', function(e){
-    if (e.target.classList.contains('row-price')){
-      var day = e.target.getAttribute('data-day');
-      var rowId = Number(e.target.getAttribute('data-row-id'));
-      var row = week[day].filter(function(r){ return r.uid === rowId; })[0];
-      if (row){
-        var val = parseFloat(e.target.value);
-        row.price = isNaN(val) || val < 0 ? 0 : val;
-        updateSummary();
-      }
-    }
-  });
-
-  renderAllDays();
-  updateSummary();
-
-  var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var revealEls = document.querySelectorAll('.reveal');
-  if (!prefersReduced && 'IntersectionObserver' in window){
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if (entry.isIntersecting){
-          entry.target.classList.add('in');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold:0.12 });
-    revealEls.forEach(function(el){ io.observe(el); });
-  } else {
-    revealEls.forEach(function(el){ el.classList.add('in'); });
-  }
-})();
+buildGrid();
 </script>
-
 </body>
 </html>
