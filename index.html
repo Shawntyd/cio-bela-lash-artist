@@ -16,6 +16,14 @@
 body{background:var(--cream);color:var(--dark);font-family:'Jost',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden;}
 
 /* HERO */
+/* VIDEO HERO */
+.video-hero{min-height:100vh;background:var(--dark);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:50px 20px;position:relative;overflow:hidden;}
+.video-hero video{max-height:75vh;max-width:92vw;width:auto;height:auto;display:block;border-radius:4px;box-shadow:0 20px 60px rgba(0,0,0,0.5);}
+.video-scroll-btn{margin-top:28px;background:none;border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:8px;padding:8px;}
+.video-scroll-btn .vlbl{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:rgba(201,169,110,0.6);font-family:'Jost',sans-serif;}
+.video-scroll-btn .varrow{font-size:18px;color:var(--gold);animation:vsbounce 2s ease-in-out infinite;}
+@keyframes vsbounce{0%,100%{transform:translateY(0);opacity:0.5;}50%{transform:translateY(8px);opacity:1;}}
+
 .hero{min-height:100vh;background:var(--dark);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:80px 32px 60px;text-align:center;position:relative;overflow:hidden;}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 25% 65%,rgba(107,39,55,0.45) 0%,transparent 55%),radial-gradient(ellipse at 80% 20%,rgba(201,169,110,0.1) 0%,transparent 50%);}
 .hero-eye{font-size:10px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);position:relative;z-index:1;margin-bottom:28px;}
@@ -188,8 +196,19 @@ body{background:var(--cream);color:var(--dark);font-family:'Jost',sans-serif;fon
 </head>
 <body>
 
+<!-- VIDEO INTRO -->
+<section class="video-hero">
+  <video autoplay muted loop playsinline controls>
+    <source src="hero-video.mp4" type="video/mp4">
+  </video>
+  <button class="video-scroll-btn" onclick="document.getElementById('main-hero').scrollIntoView({behavior:'smooth'})" aria-label="Scroll down to see the rest of the page">
+    <span class="vlbl">Scroll to Explore</span>
+    <span class="varrow">&#8595;</span>
+  </button>
+</section>
+
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="main-hero">
   <div class="hero-eye">Cio Bela &middot; Multi-Service Salon &middot; The Woodlands, TX</div>
   <h1 class="hero-title">Build Your<br><em>Lash Artist</em><br>Career Here.</h1>
   <div class="hero-line"></div>
