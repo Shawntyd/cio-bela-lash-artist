@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cio Bela Salon - Lash Artist Opportunity</title>
-<meta name="description" content="Join Cio Bela Salon in The Woodlands, TX as a lash artist. Step into proven overflow demand with built-in clientele and income-scaled rent.">
+<title>Cio Bela Salon - Artist Opportunity</title>
+<meta name="description" content="Join Cio Bela Salon in The Woodlands, TX as a hair, nail, lash, or wax artist. Built-in clientele, proven demand, and income-scaled rent.">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -40,6 +40,24 @@ body{background:var(--cream);color:var(--dark);font-family:'Jost',sans-serif;fon
 .about-num em{font-style:italic;color:var(--gold);}
 .about-lbl{font-size:12px;letter-spacing:1px;color:var(--warm);margin-top:4px;}
 
+/* SPECIALTY SELECTOR */
+.spec-wrap{max-width:1040px;margin:0 auto;padding:0 24px;}
+.spec-select{padding:8px 0 36px;}
+.spec-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:640px;margin:0 auto;}
+.spec-btn{background:rgba(245,240,232,0.04);border:1px solid rgba(201,169,110,0.25);color:var(--cream);font-family:'Jost',sans-serif;padding:18px 8px;text-align:center;cursor:pointer;transition:all 0.2s;}
+.spec-btn-name{font-family:'Cormorant Garamond',serif;font-size:19px;color:var(--cream);margin-bottom:2px;}
+.spec-btn-sub{font-size:9px;letter-spacing:1px;text-transform:uppercase;color:rgba(245,240,232,0.35);}
+.spec-btn:hover{border-color:rgba(201,169,110,0.5);background:rgba(201,169,110,0.06);}
+.spec-btn.active{background:rgba(201,169,110,0.14);border-color:var(--gold);}
+.spec-btn.active .spec-btn-name{color:var(--gold);}
+.spec-hint{text-align:center;font-size:11px;color:rgba(245,240,232,0.35);margin-top:14px;letter-spacing:.5px;}
+.calc-locked{display:none;}
+.calc-locked.show{display:block;}
+.calc-placeholder{text-align:center;padding:30px 20px;color:rgba(245,240,232,0.3);font-size:12px;letter-spacing:1px;border:1px dashed rgba(201,169,110,0.15);}
+.sec-placeholder{text-align:center;padding:40px 20px;color:rgba(140,123,107,0.5);font-size:13px;letter-spacing:.5px;border:1px dashed rgba(201,169,110,0.25);margin-top:36px;}
+.svc-bg .sec-placeholder{color:rgba(245,240,232,0.3);}
+.profit-bg .sec-placeholder{color:rgba(245,240,232,0.3);}
+
 /* SERVICES */
 .svc-bg{background:var(--dark);}
 .svc-bg .sec-lbl{color:var(--gold);}
@@ -52,7 +70,7 @@ body{background:var(--cream);color:var(--dark);font-family:'Jost',sans-serif;fon
 .svc-name{font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--cream);margin-bottom:8px;}
 .svc-detail{font-size:12px;color:rgba(140,123,107,0.8);line-height:1.8;}
 
-/* LASH PRICING */
+/* PRICING */
 .wax-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:36px;}
 .wax-card{background:var(--cream);padding:24px 20px;}
 .wax-name{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--dark);margin-bottom:4px;}
@@ -96,7 +114,7 @@ body{background:var(--cream);color:var(--dark);font-family:'Jost',sans-serif;fon
 .calc-intro h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,5vw,52px);font-weight:300;color:var(--cream);line-height:1.1;margin-bottom:14px;}
 .calc-intro h2 em{font-style:italic;color:var(--gold);}
 .calc-intro p{font-size:14px;color:rgba(245,240,232,0.6);max-width:500px;margin:0 auto 28px;line-height:1.85;}
-.calc-steps{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;max-width:620px;margin:0 auto 20px;}
+.calc-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:760px;margin:0 auto 20px;}
 .calc-step{background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.1);padding:14px;text-align:left;}
 .calc-step-n{font-family:'Cormorant Garamond',serif;font-size:30px;color:rgba(201,169,110,0.3);line-height:1;margin-bottom:6px;}
 .calc-step-t{font-size:13px;color:var(--cream);margin-bottom:3px;}
@@ -131,22 +149,27 @@ body{background:var(--cream);color:var(--dark);font-family:'Jost',sans-serif;fon
 .bkwrap{border-top:1px solid var(--rule);padding-top:12px;margin-top:12px;}
 .bklbl{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--warm);margin-bottom:8px;}
 .bkrow{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(201,169,110,0.05);font-size:12px;}
-.bkname{color:rgba(245,240,232,0.5);}
+.bkname{color:rgba(245,240,232,0.5);flex:1;padding-right:8px;}
 .bkct{color:var(--warm);font-size:11px;}
 .bkamt{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--gold);}
 .emptyhint{text-align:center;padding:20px 8px;color:rgba(140,123,107,0.28);font-size:12px;line-height:1.8;border:1px dashed rgba(201,169,110,0.07);}
 .resetbtn{width:100%;padding:10px;background:none;border:1px solid rgba(255,255,255,0.06);color:rgba(255,255,255,0.18);font-family:'Jost',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;cursor:pointer;margin-top:14px;}
-.modal-ov{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.9);align-items:center;justify-content:center;padding:20px;}
-.modal-ov.open{display:flex;}
-.modal-box{background:#1E1812;border:1px solid rgba(201,169,110,0.2);width:100%;max-width:400px;max-height:88vh;overflow-y:auto;}
-.mscr{padding:22px;}
-.meye{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:6px;}
-.mhead{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--cream);margin-bottom:14px;}
+
+/* INLINE SERVICE PANEL */
+.panel-box{background:#1E1812;border:1px solid rgba(201,169,110,0.2);padding:22px;margin-top:16px;}
+.panel-box .meye{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:6px;}
+.panel-box .mhead{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--cream);margin-bottom:10px;}
+.mcat-tabs{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:14px;}
+.mcat-tab{background:rgba(201,169,110,0.08);border:1px solid rgba(201,169,110,0.15);padding:4px 9px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(201,169,110,0.45);cursor:pointer;font-family:'Jost',sans-serif;}
+.mcat-tab.active{background:rgba(201,169,110,0.18);border-color:var(--gold);color:var(--gold);}
 .sopt{display:flex;align-items:center;justify-content:space-between;padding:12px;cursor:pointer;margin-bottom:2px;border:1px solid transparent;}
 .sopt:active{background:rgba(107,39,55,0.3);}
+.sopt-left{flex:1;}
 .sopt-name{font-size:14px;color:var(--cream);}
+.sopt-cat{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);opacity:0.5;margin-bottom:2px;}
 .sopt-time{font-size:11px;color:var(--warm);margin-top:2px;}
-.sopt-price{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--gold);}
+.sopt-price{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--gold);flex-shrink:0;margin-left:10px;}
+.sopt.hidden{display:none;}
 .pinput{width:100%;background:rgba(245,240,232,0.05);border:2px solid var(--gold);color:var(--cream);font-family:'Cormorant Garamond',serif;font-size:40px;padding:14px;outline:none;text-align:center;margin-bottom:14px;-webkit-appearance:none;appearance:none;display:block;}
 .addbtn-c{display:block;width:100%;padding:16px;background:var(--gold);border:none;color:var(--dark);font-family:'Jost',sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;cursor:pointer;font-weight:500;margin-bottom:8px;-webkit-appearance:none;appearance:none;}
 .cancelbtn{display:block;width:100%;padding:12px;background:none;border:1px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.32);font-family:'Jost',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;-webkit-appearance:none;appearance:none;}
@@ -181,8 +204,9 @@ body{background:var(--cream);color:var(--dark);font-family:'Jost',sans-serif;fon
   .calc-app{grid-template-columns:1fr;}
   .calc-week{padding-right:0;border-right:none;border-bottom:1px solid var(--rule);padding-bottom:22px;margin-bottom:22px;}
   .calc-dash{padding-left:0;}
-  .calc-steps{grid-template-columns:1fr;}
+  .calc-steps{grid-template-columns:1fr 1fr;}
   .days-row{gap:5px;}
+  .spec-grid{grid-template-columns:1fr 1fr;}
 }
 </style>
 </head>
@@ -191,10 +215,10 @@ body{background:var(--cream);color:var(--dark);font-family:'Jost',sans-serif;fon
 <!-- HERO -->
 <section class="hero">
   <div class="hero-eye">Cio Bela &middot; Multi-Service Salon &middot; The Woodlands, TX</div>
-  <h1 class="hero-title">Build Your<br><em>Lash Artist</em><br>Career Here.</h1>
+  <h1 class="hero-title">Build Your<br><em>Artist</em><br>Career Here.</h1>
   <div class="hero-line"></div>
   <p class="hero-sub">A full-service salon with an established clientele &mdash; and a growth path built around your income, not our overhead.</p>
-  <p class="hero-loc">Pro-Artist Profit Path &middot; Lash Specialist Position</p>
+  <p class="hero-loc">Pro-Artist Profit Path &middot; Hair &middot; Nails &middot; Lashes &middot; Waxing</p>
 </section>
 
 <!-- ABOUT -->
@@ -203,10 +227,10 @@ body{background:var(--cream);color:var(--dark);font-family:'Jost',sans-serif;fon
     <div class="sec-lbl">The Salon</div>
     <h2 class="sec-title">You&rsquo;re not renting a room.<br>You&rsquo;re joining an <em>ecosystem.</em></h2>
     <p class="body-txt">Cio Bela is a full multi-service salon in The Woodlands, TX &mdash; one of the fastest-growing luxury communities in the country. We are not a suite rental building or an isolated booth. We are a single, cohesive brand with active clients across multiple services, all under one roof.</p>
-    <p class="body-txt">When you join as our lash specialist, you step into an existing stream of foot traffic and cross-service referrals from day one. Our hair, nail, waxing, and tanning clients are already here &mdash; and they will become your lash clients too.</p>
+    <p class="body-txt">Whichever specialty you bring, you step into an existing stream of foot traffic and cross-service referrals from day one. Our hair, nail, lash, wax, and tanning clients are already here &mdash; and they will become your clients too.</p>
     <div class="stat-grid">
       <div class="about-stat"><div class="about-num">5<em>+</em></div><div class="about-lbl">Active service categories under one roof</div></div>
-      <div class="about-stat"><div class="about-num">11<em>+</em></div><div class="about-lbl">Years of master-level lash expertise leading the brand</div></div>
+      <div class="about-stat"><div class="about-num">10<em>+</em></div><div class="about-lbl">Years of master-level expertise leading the brand</div></div>
       <div class="about-stat"><div class="about-num">1<em>:1</em></div><div class="about-lbl">Direct guidance and growth partnership at every tier</div></div>
       <div class="about-stat"><div class="about-num"><em>$50</em></div><div class="about-lbl">Weekly rent to start &mdash; rises only as your income does</div></div>
     </div>
@@ -218,20 +242,48 @@ body{background:var(--cream);color:var(--dark);font-family:'Jost',sans-serif;fon
   <div class="calc-intro">
     <div style="font-size:10px;letter-spacing:5px;text-transform:uppercase;color:rgba(245,240,232,0.4);margin-bottom:14px;">Try It Now &middot; Interactive Tool</div>
     <h2>What would <em>your week</em> actually earn?</h2>
-    <p>Build a hypothetical work week service by service. Your income, take-home pay, and annual projection update in real time.</p>
+    <p>Pick your specialty, then build a hypothetical work week service by service. Your income, take-home pay, and annual projection update in real time.</p>
     <div class="calc-steps">
-      <div class="calc-step"><div class="calc-step-n">01</div><div class="calc-step-t">Tap + on any day</div><div class="calc-step-d">Pick a service from the list.</div></div>
-      <div class="calc-step"><div class="calc-step-n">02</div><div class="calc-step-t">Confirm the price</div><div class="calc-step-d">Edit to match your rates.</div></div>
-      <div class="calc-step"><div class="calc-step-n">03</div><div class="calc-step-t">Watch the numbers</div><div class="calc-step-d">Income and tier update live.</div></div>
+      <div class="calc-step"><div class="calc-step-n">01</div><div class="calc-step-t">Choose your specialty</div><div class="calc-step-d">Hair, nails, lashes, or waxing.</div></div>
+      <div class="calc-step"><div class="calc-step-n">02</div><div class="calc-step-t">Tap + on any day</div><div class="calc-step-d">Pick a service from the list.</div></div>
+      <div class="calc-step"><div class="calc-step-n">03</div><div class="calc-step-t">Confirm the price</div><div class="calc-step-d">Edit to match your rates.</div></div>
+      <div class="calc-step"><div class="calc-step-n">04</div><div class="calc-step-t">Watch the numbers</div><div class="calc-step-d">Income and tier update live.</div></div>
     </div>
-    <div class="calc-arrow">&#8595; build your week below &#8595;</div>
+    <div class="calc-arrow">&#8595; choose your specialty below &#8595;</div>
   </div>
+
   <div class="calc-body">
+    <div class="spec-wrap">
+      <div class="spec-select">
+        <div class="c-lbl" style="text-align:center">Step One &middot; Choose Your Specialty</div>
+        <div class="spec-grid" id="SPECGRID"></div>
+        <p class="spec-hint" id="SPECHINT">Select a specialty to build your week.</p>
+      </div>
+    </div>
     <div class="calc-app">
       <div class="calc-week">
         <div class="c-lbl">Your Hypothetical Work Week</div>
         <div class="days-row" id="DG"></div>
-        <p class="hint-sm">Tap <b style="color:rgba(201,169,110,0.5)">+</b> on any day to add a service.</p>
+        <p class="hint-sm" id="WEEKHINT">Tap <b style="color:rgba(201,169,110,0.5)">+</b> on any day to add a service.</p>
+        <div id="SVC-PANEL" style="display:none;">
+          <div class="panel-box">
+            <div id="PANEL-SCR1">
+              <div class="meye" id="MDAY">Adding to Mon</div>
+              <div class="mhead">Choose a Service</div>
+              <div class="mcat-tabs" id="MCATS"></div>
+              <div id="MLST"></div>
+              <button class="cancelbtn" id="BCAN" style="margin-top:10px;">Cancel</button>
+            </div>
+            <div id="PANEL-SCR2" style="display:none;">
+              <div class="meye" id="MPDAY">Adding to Mon</div>
+              <div class="mhead" id="MPNAME">Service</div>
+              <div style="font-size:13px;color:#8C7B6B;margin-bottom:18px;">Confirm or edit the price, then tap Add.</div>
+              <input class="pinput" type="number" inputmode="decimal" id="PINP" />
+              <button class="addbtn-c" id="BADD">Add to Week &#10003;</button>
+              <button class="cancelbtn" id="BBACK">&#8592; Back</button>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="calc-dash">
         <div class="c-lbl">Your Numbers</div>
@@ -241,28 +293,10 @@ body{background:var(--cream);color:var(--dark);font-family:'Jost',sans-serif;fon
         <div class="tbadge" id="ST">Tier One &middot; Foundation Phase</div>
         <div class="prog-row"><span id="SPL">$0 / wk</span><span id="SPR">Next tier at $701</span></div>
         <div class="prog-tr"><div class="prog-fill" id="SPB"></div></div>
-        <div class="prog-msg" id="SPM">Add <b>$701</b> more/wk to reach Tier Two.</div>
+        <div class="prog-msg" id="SPM">Choose a specialty to begin.</div>
         <div class="bkwrap" id="SBK" style="display:none"><div class="bklbl">This Week</div><div id="SBKL"></div></div>
-        <div class="emptyhint" id="SEM">Tap + to start building your week.</div>
+        <div class="emptyhint" id="SEM">Choose a specialty, then tap + to start building your week.</div>
         <button class="resetbtn" id="BRST">&#8635; Clear Week</button>
-      </div>
-    </div>
-  </div>
-  <div class="modal-ov" id="MOD">
-    <div class="modal-box">
-      <div class="mscr" id="SCR1">
-        <div class="meye" id="MDAY">Adding to Mon</div>
-        <div class="mhead">Choose a Service</div>
-        <div id="MLST"></div>
-        <button class="cancelbtn" id="BCAN">Cancel</button>
-      </div>
-      <div class="mscr" id="SCR2" style="display:none">
-        <div class="meye" id="MPDAY">Adding to Mon</div>
-        <div class="mhead" id="MPNAME">Service</div>
-        <div style="font-size:13px;color:#8C7B6B;margin-bottom:18px;">Confirm or edit the price, then tap Add.</div>
-        <input class="pinput" type="number" inputmode="decimal" id="PINP" />
-        <button class="addbtn-c" id="BADD">Add to Week &#10003;</button>
-        <button class="cancelbtn" id="BBACK">&#8592; Back</button>
       </div>
     </div>
   </div>
@@ -274,30 +308,19 @@ body{background:var(--cream);color:var(--dark);font-family:'Jost',sans-serif;fon
     <div class="sec-lbl">Our Current Services</div>
     <h2 class="sec-title" style="color:var(--cream)">The clientele<br>is already <em>here.</em></h2>
     <p class="body-txt">These are the services Cio Bela already provides. Clients are already here for every service below.</p>
-    <div class="svc-grid">
-      <div class="svc-card"><div class="svc-tag">Hair</div><div class="svc-name">Hair Services</div><div class="svc-detail">Extensions, chemical treatments, blonding, smoothing, cuts, color, and styling. A full hair menu with an established, returning book of clients.</div></div>
-      <div class="svc-card"><div class="svc-tag">Nails</div><div class="svc-name">Nail Services</div><div class="svc-detail">Premium nail menu including Russian Manicure and SMART dry pedicure &mdash; high-ticket services rare in this market, actively drawing new clientele.</div></div>
-      <div class="svc-card"><div class="svc-tag">Waxing</div><div class="svc-name">Waxing Services</div><div class="svc-detail">Brazilian, bikini, face, and body waxing from a specialized team &mdash; a high-frequency, high-retention category with clients returning every 3&ndash;5 weeks.</div></div>
-      <div class="svc-card"><div class="svc-tag">Tanning</div><div class="svc-name">Tanning Beds</div><div class="svc-detail">Sunbed tanning services available to clients already visiting for other treatments &mdash; an easy add-on with lash-referral potential.</div></div>
-    </div>
+    <div class="svc-grid" id="SVCGRID"></div>
   </div>
 </section>
 
-<!-- LASH PRICING -->
+<!-- PRICING -->
 <section style="background:var(--cream)">
   <div class="wrap sec">
-    <div class="sec-lbl">Lash Menu &middot; Cio Bela Pricing &middot; The Woodlands, TX</div>
+    <div class="sec-lbl" id="PRICELBL">Local Pricing &middot; The Woodlands, TX</div>
     <h2 class="sec-title">What clients<br><em>already pay.</em></h2>
-    <p class="body-txt">Cio Bela&rsquo;s current lash pricing. Lash is a high-frequency, high-retention specialty &mdash; once a client finds their artist, they return every 2&ndash;3 weeks without fail.</p>
-    <div class="wax-grid">
-      <div class="wax-card"><div class="wax-name">Classic Full Set</div><div class="wax-freq">Natural definition &middot; our most timeless look</div><div class="wax-price">$95</div><div class="wax-unit">per full set</div></div>
-      <div class="wax-card"><div class="wax-name">Hybrid Full Set</div><div class="wax-freq">Classic + volume blend &middot; our most-booked style</div><div class="wax-price">$115</div><div class="wax-unit">per full set</div></div>
-      <div class="wax-card"><div class="wax-name">Volume Full Set</div><div class="wax-freq">Maximum drama &middot; handmade fans, fully customized</div><div class="wax-price">$150</div><div class="wax-unit">per full set</div></div>
-      <div class="wax-card"><div class="wax-name">2-Week Refill</div><div class="wax-freq">Across every style &middot; most clients&rsquo; rhythm</div><div class="wax-price">$53&ndash;$79</div><div class="wax-unit">per refill</div></div>
-      <div class="wax-card"><div class="wax-name">3-Week Refill</div><div class="wax-freq">Across every style &middot; for a longer stretch</div><div class="wax-price">$72&ndash;$99</div><div class="wax-unit">per refill</div></div>
-      <div class="wax-card"><div class="wax-name">UV-Cured Upgrade</div><div class="wax-freq">Instant cure, zero downtime &middot; always optional</div><div class="wax-price">+$11&ndash;$30</div><div class="wax-unit">on any set</div></div>
+    <p class="body-txt" id="PRICESUB">Select your specialty above to see Cio Bela&rsquo;s current pricing for that service.</p>
+    <div id="PRICEBODY">
+      <div class="sec-placeholder">Choose a specialty in the calculator above to unlock this menu.</div>
     </div>
-    <p class="price-fn">*Shown as a reference based on Cio Bela&rsquo;s current lash pricing. As an independent 1099 artist, you set your own service rates.</p>
   </div>
 </section>
 
@@ -306,17 +329,10 @@ body{background:var(--cream);color:var(--dark);font-family:'Jost',sans-serif;fon
   <div class="wrap sec">
     <div class="sec-lbl">Pro-Artist Profit Path &middot; Full Breakdown</div>
     <h2 class="sec-title">Complete transparency<br>on <em>income &amp; rent.</em></h2>
-    <p class="body-txt">Your rent rises only when your income rises &mdash; never before. Service counts based on a blended average of ~$93 per lash appointment, mixing full sets and refills across all three styles.</p>
-    <table class="profit-table">
-      <thead><tr><th>Weekly Gross</th><th>Annual Income</th><th>Approx. Services</th><th>Weekly Rent</th></tr></thead>
-      <tbody>
-        <tr><td>$0 &ndash; $700</td><td class="annual">$0 &ndash; $36,400</td><td class="svc">0 &ndash; 7</td><td class="rent">$50</td></tr>
-        <tr><td>$701 &ndash; $1,000</td><td class="annual">$36,452 &ndash; $52,000</td><td class="svc">8 &ndash; 10</td><td class="rent">$100</td></tr>
-        <tr><td>$1,001 &ndash; $1,300</td><td class="annual">$52,052 &ndash; $67,600</td><td class="svc">11 &ndash; 13</td><td class="rent">$150</td></tr>
-        <tr class="top"><td>$1,301 &ndash; $1,922</td><td class="annual">$67,652 &ndash; $99,944</td><td class="svc">14 &ndash; 20</td><td class="rent">$200</td></tr>
-      </tbody>
-    </table>
-    <p class="profit-fn">*Service counts based on a blended average ticket of ~$93, mixing full sets and refills. Actual numbers vary by individual style mix and pricing. Annual figures represent gross revenue annualized over 52 weeks.</p>
+    <p class="body-txt" id="PROFITSUB">Your rent rises only when your income rises &mdash; never before.</p>
+    <div id="PROFITBODY">
+      <div class="sec-placeholder">Choose a specialty in the calculator above to see your personalized breakdown.</div>
+    </div>
   </div>
 </section>
 
@@ -342,7 +358,7 @@ body{background:var(--cream);color:var(--dark);font-family:'Jost',sans-serif;fon
     <h2 class="sec-title">More than a booth.<br>A <em>partnership.</em></h2>
     <p class="body-txt">This is not a suite rental. You don&rsquo;t get a room, a key, and a good luck. You get an active partner invested in your growth at every stage.</p>
     <div class="pillars">
-      <div class="pillar"><div class="pillar-num">01</div><div class="pillar-title">Built-In Clientele</div><div class="pillar-txt">Hair, nail, waxing, and tanning clients are already here. Cross-service referrals activate from day one &mdash; plus a founder-built lash clientele already asking for a second set of hands.</div></div>
+      <div class="pillar"><div class="pillar-num">01</div><div class="pillar-title">Built-In Clientele</div><div class="pillar-txt">Hair, nail, lash, wax, and tanning clients are already here. Cross-service referrals activate from day one, whichever specialty you bring.</div></div>
       <div class="pillar"><div class="pillar-num">02</div><div class="pillar-title">Guided Growth</div><div class="pillar-txt">1:1 support at every tier &mdash; service menu, pricing, rebooking systems, brand visibility, and client retention.</div></div>
       <div class="pillar"><div class="pillar-num">03</div><div class="pillar-title">Income-Scaled Rent</div><div class="pillar-txt">Your rent only rises when your income does. You&rsquo;ll never carry full rent before you&rsquo;ve built the foundation to support it.</div></div>
       <div class="pillar"><div class="pillar-num">04</div><div class="pillar-title">Luxury Environment</div><div class="pillar-txt">A polished, vibrant multi-service salon in The Woodlands attracting quality clientele and giving your brand the space it deserves.</div></div>
@@ -356,24 +372,145 @@ body{background:var(--cream);color:var(--dark);font-family:'Jost',sans-serif;fon
 <section class="cta-bg">
   <div class="cta-lbl">Join Cio Bela</div>
   <h2 class="cta-title">Your next chapter<br>starts at <em>Cio Bela.</em></h2>
-  <p class="cta-sub">If you&rsquo;re a licensed lash artist ready to build a loyal, profitable book of business inside one of The Woodlands&rsquo; multi-service salons, we want to connect today.</p>
+  <p class="cta-sub" id="CTASUB">If you&rsquo;re a licensed artist ready to build a loyal, profitable book of business inside one of The Woodlands&rsquo; multi-service salons, we want to connect today.</p>
   <a class="cta-btn" href="https://www.ciobelasalons.com/join-our-team" target="_blank">Apply Now &middot; Join Our Team</a>
 </section>
 
-<p class="footnote">Cio Bela Salon &middot; The Woodlands, Texas &middot; ciobelasalons.com<br>All pricing reflects Cio Bela&rsquo;s current lash menu and is subject to change. Income estimates are gross and do not account for product costs or other individual artist expenses.</p>
+<p class="footnote">Cio Bela Salon &middot; The Woodlands, Texas &middot; ciobelasalons.com<br>All pricing reflects Cio Bela&rsquo;s current menu and is subject to change. Income estimates are gross and do not account for product costs or other individual artist expenses.</p>
 
 <script>
-var SVCS=[
-  {name:"Classic Full Set",time:"2-2.5 hrs",price:95},
-  {name:"Classic 2-Wk Refill",time:"45-60 min",price:53},
-  {name:"Classic 3-Wk Refill",time:"60-75 min",price:72},
-  {name:"Hybrid Full Set",time:"2-2.5 hrs",price:115},
-  {name:"Hybrid 2-Wk Refill",time:"60-75 min",price:69},
-  {name:"Hybrid 3-Wk Refill",time:"75-90 min",price:89},
-  {name:"Volume Full Set",time:"2.5-3 hrs",price:150},
-  {name:"Volume 2-Wk Refill",time:"75-90 min",price:79},
-  {name:"Volume 3-Wk Refill",time:"90-105 min",price:99}
+/* ═══ ESTABLISHED-SERVICE CARDS (shown for whichever 3 specialties are NOT selected, plus tanning always) ═══ */
+var ESTABLISHED = {
+  hair:   {tag:"Hair",   name:"Hair Services",     detail:"Extensions, chemical treatments, blonding, smoothing, cuts, color, and styling. A full hair menu with an established, returning book of clients."},
+  nails:  {tag:"Nails",  name:"Nail Services",     detail:"Premium nail menu including Russian Manicure and SMART dry pedicure &mdash; high-ticket services rare in this market, actively drawing new clientele."},
+  lashes: {tag:"Lashes", name:"Eyelash Extensions",detail:"Volume, hybrid, and classic extensions by a master lash artist with 11+ years experience. Uses Xtreme Lashes&reg; with Flashcure UV technology. Clients return every 2&ndash;3 weeks."},
+  waxing: {tag:"Waxing", name:"Waxing Services",   detail:"Brazilian, bikini, face, and body waxing from a specialized team &mdash; a high-frequency, high-retention category with clients returning every 3&ndash;5 weeks."}
+};
+var TANNING = {tag:"Tanning", name:"Tanning Beds", detail:"Sunbed tanning services available to clients already visiting for other treatments &mdash; an easy add-on with referral potential."};
+
+var SPEC_ORDER = ["hair","nails","lashes","waxing"];
+var SPEC_META = {
+  hair:   {label:"Hair",   sub:"Stylist",   artistLabel:"licensed hair stylist",   menuLbl:"Hair Menu"},
+  nails:  {label:"Nails",  sub:"Artist",    artistLabel:"licensed nail artist",    menuLbl:"Nail Menu"},
+  lashes: {label:"Lashes", sub:"Artist",    artistLabel:"licensed lash artist",    menuLbl:"Lash Menu"},
+  waxing: {label:"Waxing", sub:"Specialist",artistLabel:"licensed waxing specialist",menuLbl:"Waxing Menu"}
+};
+
+/* ═══ PRICING CARDS PER SPECIALTY (6 each, for the Local Pricing section) ═══ */
+var PRICING = {
+  hair: [
+    {name:"Haircut &amp; Style",   desc:"Wash, cut, and blowout &middot; quick weekly refresh",         price:"$65",  unit:"per visit"},
+    {name:"Blowout",               desc:"No cut, just polish &middot; popular standalone visit",         price:"$35",  unit:"per visit"},
+    {name:"Single Process Color",  desc:"All-over color, roots to ends",                                 price:"$70",  unit:"per service"},
+    {name:"Partial Highlight",     desc:"Face-framing foils &middot; half-head dimension",               price:"$125", unit:"per service"},
+    {name:"Full Highlight",        desc:"Full-head foils &middot; maximum dimension",                    price:"$175", unit:"per service"},
+    {name:"Balayage",              desc:"Hand-painted, low-maintenance color &middot; most requested",   price:"$275+",unit:"starting at"}
+  ],
+  nails: [
+    {name:"Acrylic Full Set",      desc:"Our most requested set &middot; classic sculpted acrylic",      price:"$60",  unit:"per full set"},
+    {name:"Acrylic Fill",          desc:"Every 2&ndash;3 weeks &middot; steady rebooking",                price:"$45",  unit:"per fill"},
+    {name:"Russian Manicure",      desc:"Premium technique &middot; highest local demand gap",            price:"$80",  unit:"per service"},
+    {name:"Smart / Dry Pedicure",  desc:"No-soak precision pedicure &middot; stacks with any mani",        price:"$90",  unit:"per service"},
+    {name:"Gel-X Extensions",      desc:"Lightweight tips &middot; natural-looking length",               price:"$70",  unit:"per full set"},
+    {name:"Dip Powder (SNS)",      desc:"Long-wearing color &middot; no UV lamp needed",                   price:"$55",  unit:"per service"}
+  ],
+  lashes: [
+    {name:"Classic Full Set",      desc:"Natural definition &middot; our most timeless look",             price:"$95",  unit:"per full set"},
+    {name:"Hybrid Full Set",       desc:"Classic + volume blend &middot; our most-booked style",           price:"$115", unit:"per full set"},
+    {name:"Volume Full Set",       desc:"Maximum drama &middot; handmade fans, fully customized",          price:"$150", unit:"per full set"},
+    {name:"2-Week Refill",         desc:"Across every style &middot; most clients&rsquo; rhythm",          price:"$53&ndash;$79", unit:"per refill"},
+    {name:"3-Week Refill",         desc:"Across every style &middot; for a longer stretch",                price:"$72&ndash;$99", unit:"per refill"},
+    {name:"UV-Cured Upgrade",      desc:"Instant cure, zero downtime &middot; always optional",            price:"+$11&ndash;$30",unit:"on any set"}
+  ],
+  waxing: [
+    {name:"Brazilian Wax",         desc:"Most requested &middot; returns every 3&ndash;5 weeks",           price:"$65&ndash;$80", unit:"per service"},
+    {name:"Bikini Wax",            desc:"High volume &middot; quick appointments",                         price:"$45&ndash;$55", unit:"per service"},
+    {name:"Full Leg Wax",          desc:"High ticket &middot; strong seasonal demand",                     price:"$65&ndash;$75", unit:"per service"},
+    {name:"Brow Shaping",          desc:"Fast add-on &middot; pairs with any service",                     price:"$20&ndash;$28", unit:"10&ndash;15 min"},
+    {name:"Full Face Wax",         desc:"Brows + lip + chin &middot; loyal repeat clients",                price:"$40&ndash;$50", unit:"per service"},
+    {name:"Underarm / Arms",       desc:"Popular bundle addition",                                         price:"$25&ndash;$65", unit:"individual or bundled"}
+  ]
+};
+
+/* ═══ PROFIT-PATH: same $ / rent tiers for every specialty, only the service-count column changes with blended ticket ═══ */
+var PROFIT_META = {
+  hair:   {blended:"~$85",  sub:"Service counts based on a blended average of ~$85 per hair appointment, mixing cuts, color, and treatment services.", approx:["0 &ndash; 8","9 &ndash; 11","12 &ndash; 15","16 &ndash; 22"]},
+  nails:  {blended:"~$60",  sub:"Service counts based on a blended average of ~$60 per nail appointment across the full service menu.",                approx:["0 &ndash; 11","12 &ndash; 16","17 &ndash; 21","22 &ndash; 32"]},
+  lashes: {blended:"~$93",  sub:"Service counts based on a blended average of ~$93 per lash appointment, mixing full sets and refills across all three styles.", approx:["0 &ndash; 7","8 &ndash; 10","11 &ndash; 13","14 &ndash; 20"]},
+  waxing: {blended:"~$60&ndash;65", sub:"Service counts based on a blended average ticket of ~$60&ndash;$65.", approx:["9 &ndash; 11","12 &ndash; 16","17 &ndash; 21","22 &ndash; 32"]}
+};
+var GROSS_ROWS = [
+  {gross:"$0 &ndash; $700",       annual:"$0 &ndash; $36,400",         rent:"$50"},
+  {gross:"$701 &ndash; $1,000",   annual:"$36,452 &ndash; $52,000",    rent:"$100"},
+  {gross:"$1,001 &ndash; $1,300", annual:"$52,052 &ndash; $67,600",    rent:"$150"},
+  {gross:"$1,301 &ndash; $1,922", annual:"$67,652 &ndash; $99,944",    rent:"$200"}
 ];
+
+/* ═══ CALCULATOR SERVICE LISTS ═══ */
+var CATEGORIES = {
+  nails: ["All","Manicures","Enhancements","Nail Art","Pedicures"]
+};
+var SVCS = {
+  hair: [
+    {name:"Women's Haircut & Style",time:"45-60 min",price:65},
+    {name:"Men's Haircut",time:"30-40 min",price:35},
+    {name:"Blowout / Shampoo & Style",time:"30-45 min",price:35},
+    {name:"Single Process Color",time:"60-90 min",price:70},
+    {name:"Root Touch-Up",time:"60-75 min",price:60},
+    {name:"Partial Highlight (Half Foil)",time:"90-120 min",price:125},
+    {name:"Full Highlight (Full Foil)",time:"2-2.5 hrs",price:175},
+    {name:"Balayage",time:"2.5-3.5 hrs",price:275},
+    {name:"Gloss / Toner",time:"30-45 min",price:45},
+    {name:"Keratin Smoothing Treatment",time:"2.5-3 hrs",price:300},
+    {name:"Deep Conditioning Add-On",time:"20-30 min",price:35},
+    {name:"Special-Occasion Updo",time:"45-60 min",price:85}
+  ],
+  nails: [
+    {name:"Classic Manicure",cat:"Manicures",time:"20-30 min",price:28},
+    {name:"Structured Manicure (BIAB)",cat:"Manicures",time:"45-60 min",price:55},
+    {name:"Russian Manicure",cat:"Manicures",time:"60-75 min",price:80},
+    {name:"Men's Grooming Mani",cat:"Manicures",time:"30-40 min",price:35},
+    {name:"Eco-Chic / Organic Manicure",cat:"Manicures",time:"30-45 min",price:45},
+    {name:"Gel-X Extensions",cat:"Enhancements",time:"60-75 min",price:70},
+    {name:"Acrylic Full Set",cat:"Enhancements",time:"60-90 min",price:60},
+    {name:"Acrylic Fill",cat:"Enhancements",time:"45-60 min",price:45},
+    {name:"Hard Gel / UV Gel Extensions",cat:"Enhancements",time:"60-75 min",price:75},
+    {name:"Dip Powder (SNS)",cat:"Enhancements",time:"45-60 min",price:55},
+    {name:"Polygel",cat:"Enhancements",time:"60-75 min",price:65},
+    {name:"Nail Art \u2014 Level 1 (Simple)",cat:"Nail Art",time:"15-20 min",price:15},
+    {name:"Nail Art \u2014 Level 2 (Intermediate)",cat:"Nail Art",time:"20-30 min",price:30},
+    {name:"Nail Art \u2014 Level 3 (Advanced)",cat:"Nail Art",time:"30-45 min",price:55},
+    {name:"Spa Pedicure",cat:"Pedicures",time:"50-60 min",price:55},
+    {name:"Smart / Dry Pedicure",cat:"Pedicures",time:"50-60 min",price:90},
+    {name:"Hot Stone Pedicure",cat:"Pedicures",time:"55-65 min",price:65},
+    {name:"Paraffin Treatment",cat:"Pedicures",time:"15-20 min",price:15}
+  ],
+  lashes: [
+    {name:"Classic Full Set",time:"2-2.5 hrs",price:95},
+    {name:"Classic 2-Wk Refill",time:"45-60 min",price:53},
+    {name:"Classic 3-Wk Refill",time:"60-75 min",price:72},
+    {name:"Hybrid Full Set",time:"2-2.5 hrs",price:115},
+    {name:"Hybrid 2-Wk Refill",time:"60-75 min",price:69},
+    {name:"Hybrid 3-Wk Refill",time:"75-90 min",price:89},
+    {name:"Volume Full Set",time:"2.5-3 hrs",price:150},
+    {name:"Volume 2-Wk Refill",time:"75-90 min",price:79},
+    {name:"Volume 3-Wk Refill",time:"90-105 min",price:99}
+  ],
+  waxing: [
+    {name:"Brazilian Wax",time:"30-45 min",price:70},
+    {name:"Bikini Wax",time:"20-30 min",price:50},
+    {name:"Brow Shaping",time:"10-15 min",price:24},
+    {name:"Full Face Wax",time:"20-30 min",price:45},
+    {name:"Upper Lip Wax",time:"5-10 min",price:15},
+    {name:"Full Leg Wax",time:"45-60 min",price:70},
+    {name:"Half Leg Wax",time:"25-35 min",price:45},
+    {name:"Underarm Wax",time:"15-20 min",price:25},
+    {name:"Full Arm Wax",time:"25-35 min",price:45},
+    {name:"Back Wax",time:"30-40 min",price:55},
+    {name:"Stomach Wax",time:"15-20 min",price:30}
+  ]
+};
+
 var TIERS=[
   {num:1,label:"Tier One - Foundation",min:0,max:700,rent:50,next:"Tier Two",at:701},
   {num:2,label:"Tier Two - Momentum",min:701,max:1000,rent:100,next:"Tier Three",at:1001},
@@ -382,18 +519,99 @@ var TIERS=[
 ];
 var DAYS=["Mon","Tue","Wed","Thu","Fri"];
 var week=[[],[],[],[],[]];
-var pDay=-1,pSvc=null;
+var pDay=-1,pSvc=null,activeCat="All",currentSpec=null;
 
 function ge(id){return document.getElementById(id);}
 
+/* ═══ SPECIALTY SELECTOR ═══ */
+function buildSpecGrid(){
+  var g=ge("SPECGRID");g.innerHTML="";
+  SPEC_ORDER.forEach(function(key){
+    var m=SPEC_META[key];
+    var b=document.createElement("button");
+    b.className="spec-btn";b.setAttribute("data-key",key);
+    b.innerHTML='<div class="spec-btn-name">'+m.label+'</div><div class="spec-btn-sub">'+m.sub+'</div>';
+    b.addEventListener("click",function(){selectSpecialty(key);});
+    g.appendChild(b);
+  });
+}
+
+function selectSpecialty(key){
+  currentSpec=key;
+  document.querySelectorAll(".spec-btn").forEach(function(b){
+    b.classList.toggle("active",b.getAttribute("data-key")===key);
+  });
+  ge("SPECHINT").textContent="Building your week as a "+SPEC_META[key].label+" "+SPEC_META[key].sub+".";
+  week=[[],[],[],[],[]];
+  activeCat="All";
+  buildGrid();
+  renderServicesGrid();
+  renderPricing();
+  renderProfit();
+  renderCTA();
+}
+
+/* ═══ CURRENT SERVICES GRID ═══ */
+function cardHtml(c){
+  return '<div class="svc-card"><div class="svc-tag">'+c.tag+'</div><div class="svc-name">'+c.name+'</div><div class="svc-detail">'+c.detail+'</div></div>';
+}
+function renderServicesGrid(){
+  var keys=SPEC_ORDER.slice();
+  if(currentSpec){keys=keys.filter(function(k){return k!==currentSpec;});}
+  var html=keys.map(function(k){return cardHtml(ESTABLISHED[k]);}).join("")+cardHtml(TANNING);
+  ge("SVCGRID").innerHTML=html;
+}
+
+/* ═══ PRICING SECTION ═══ */
+function renderPricing(){
+  if(!currentSpec){
+    ge("PRICELBL").textContent="Local Pricing &middot; The Woodlands, TX";
+    ge("PRICESUB").innerHTML="Select your specialty above to see Cio Bela&rsquo;s current pricing for that service.";
+    ge("PRICEBODY").innerHTML='<div class="sec-placeholder">Choose a specialty in the calculator above to unlock this menu.</div>';
+    return;
+  }
+  var m=SPEC_META[currentSpec];
+  ge("PRICELBL").innerHTML=m.menuLbl+" &middot; Cio Bela Pricing &middot; The Woodlands, TX";
+  ge("PRICESUB").innerHTML="Cio Bela&rsquo;s current "+m.label.toLowerCase()+" pricing &mdash; shown as a reference. As an independent 1099 artist, you set your own service rates.";
+  var cards=PRICING[currentSpec].map(function(c){
+    return '<div class="wax-card"><div class="wax-name">'+c.name+'</div><div class="wax-freq">'+c.desc+'</div><div class="wax-price">'+c.price+'</div><div class="wax-unit">'+c.unit+'</div></div>';
+  }).join("");
+  ge("PRICEBODY").innerHTML='<div class="wax-grid">'+cards+'</div>';
+}
+
+/* ═══ PROFIT PATH ═══ */
+function renderProfit(){
+  if(!currentSpec){
+    ge("PROFITSUB").textContent="Your rent rises only when your income rises \u2014 never before.";
+    ge("PROFITBODY").innerHTML='<div class="sec-placeholder">Choose a specialty in the calculator above to see your personalized breakdown.</div>';
+    return;
+  }
+  var pm=PROFIT_META[currentSpec];
+  ge("PROFITSUB").innerHTML="Your rent rises only when your income rises &mdash; never before. "+pm.sub;
+  var rows=GROSS_ROWS.map(function(r,i){
+    var cls=i===3?' class="top"':'';
+    return '<tr'+cls+'><td>'+r.gross+'</td><td class="annual">'+r.annual+'</td><td class="svc">'+pm.approx[i]+'</td><td class="rent">'+r.rent+'</td></tr>';
+  }).join("");
+  ge("PROFITBODY").innerHTML=
+    '<table class="profit-table"><thead><tr><th>Weekly Gross</th><th>Annual Income</th><th>Approx. Services</th><th>Weekly Rent</th></tr></thead><tbody>'+rows+'</tbody></table>'+
+    '<p class="profit-fn">*Service counts based on a blended average ticket of '+pm.blended+'. Actual numbers vary by individual pricing. Annual figures represent gross revenue annualized over 52 weeks.</p>';
+}
+
+/* ═══ CTA ═══ */
+function renderCTA(){
+  var label=currentSpec?SPEC_META[currentSpec].artistLabel:"licensed artist";
+  ge("CTASUB").innerHTML="If you&rsquo;re a "+label+" ready to build a loyal, profitable book of business inside one of The Woodlands&rsquo; multi-service salons, we want to connect today.";
+}
+
+/* ═══ CALCULATOR DAY GRID ═══ */
 function buildGrid(){
   var g=ge("DG");g.innerHTML="";
   for(var i=0;i<5;i++){
-    var c=document.createElement("div");
-    c.className="dcol";c.id="DC"+i;
+    var c=document.createElement("div");c.className="dcol";c.id="DC"+i;
     c.innerHTML='<div class="dhdr">'+DAYS[i]+'</div>';
     g.appendChild(c);
   }
+  closeMod();
   renderAll();
 }
 
@@ -419,7 +637,9 @@ function renderDay(i){
   ab.addEventListener("click",function(){openMod(+this.getAttribute("data-i"));});
   col.appendChild(ab);
   var tot=0;for(var e=0;e<week[i].length;e++)tot+=week[i][e].price;
-  var td=document.createElement("div");td.className=tot===0?"dttl z":"dttl";td.textContent=tot===0?"-":"$"+tot;
+  var td=document.createElement("div");
+  td.className=tot===0?"dttl z":"dttl";
+  td.textContent=tot===0?"-":"$"+tot;
   col.appendChild(td);
 }
 
@@ -441,7 +661,7 @@ function dash(){
     ge("SPB").style.width=pct+"%";
     ge("SPL").textContent="$"+gross.toLocaleString()+" / wk";
     ge("SPR").textContent=tier.next+" at $"+tier.at.toLocaleString();
-    ge("SPM").innerHTML="Add <b>$"+(tier.at-gross).toLocaleString()+"</b> more/wk to reach "+tier.next+".";
+    ge("SPM").innerHTML=currentSpec?("Add <b>$"+(tier.at-gross).toLocaleString()+"</b> more/wk to reach "+tier.next+"."):"Choose a specialty to begin.";
   }else{
     ge("SPB").style.width="100%";
     ge("SPL").textContent="$"+gross.toLocaleString()+" / wk";
@@ -462,20 +682,58 @@ function dash(){
   }
 }
 
+/* ═══ SERVICE-PICKER PANEL ═══ */
+function buildCatTabs(){
+  var wrap=ge("MCATS");wrap.innerHTML="";
+  var cats=currentSpec&&CATEGORIES[currentSpec];
+  if(!cats){wrap.style.display="none";return;}
+  wrap.style.display="flex";
+  cats.forEach(function(cat){
+    var t=document.createElement("button");
+    t.className="mcat-tab"+(cat===activeCat?" active":"");
+    t.textContent=cat;
+    t.addEventListener("click",function(){
+      activeCat=cat;
+      wrap.querySelectorAll(".mcat-tab").forEach(function(el){el.classList.remove("active");});
+      t.classList.add("active");
+      filterList();
+    });
+    wrap.appendChild(t);
+  });
+}
+function filterList(){
+  ge("MLST").querySelectorAll(".sopt").forEach(function(el){
+    var c=el.getAttribute("data-cat");
+    el.classList.toggle("hidden",activeCat!=="All"&&c!==activeCat);
+  });
+}
+
 function openMod(i){
+  if(!currentSpec){return;}
   pDay=i;
   ge("MDAY").textContent="Adding to "+DAYS[i];
-  ge("SCR1").style.display="block";ge("SCR2").style.display="none";
+  ge("PANEL-SCR1").style.display="block";ge("PANEL-SCR2").style.display="none";
+  activeCat="All";
+  buildCatTabs();
   var list=ge("MLST");list.innerHTML="";
-  for(var s=0;s<SVCS.length;s++){
-    var svc=SVCS[s];
-    var opt=document.createElement("div");opt.className="sopt";
-    opt.innerHTML='<div><div class="sopt-name">'+svc.name+'</div><div class="sopt-time">'+svc.time+'</div></div><div class="sopt-price">$'+svc.price+'</div>';
+  var svcs=SVCS[currentSpec];
+  for(var s=0;s<svcs.length;s++){
+    var svc=svcs[s];
+    var opt=document.createElement("div");
+    opt.className="sopt";
+    opt.setAttribute("data-cat",svc.cat||"");
+    var catLine=svc.cat?('<div class="sopt-cat">'+svc.cat+'</div>'):'';
+    opt.innerHTML='<div class="sopt-left">'+catLine+'<div class="sopt-name">'+svc.name+'</div><div class="sopt-time">'+svc.time+'</div></div><div class="sopt-price">$'+svc.price+'</div>';
     opt.setAttribute("data-s",s);
-    opt.addEventListener("click",function(){pickSvc(SVCS[+this.getAttribute("data-s")]);});
+    opt.addEventListener("click",function(){pickSvc(svcs[+this.getAttribute("data-s")]);});
     list.appendChild(opt);
   }
-  ge("MOD").className="modal-ov open";
+  ge("SVC-PANEL").style.display="block";
+}
+
+function closeMod(){
+  ge("SVC-PANEL").style.display="none";
+  pDay=-1;pSvc=null;
 }
 
 function pickSvc(svc){
@@ -484,7 +742,7 @@ function pickSvc(svc){
   ge("MPNAME").textContent=svc.name;
   ge("PINP").value=svc.price;
   ge("PINP").style.borderColor="#C9A96E";
-  ge("SCR1").style.display="none";ge("SCR2").style.display="block";
+  ge("PANEL-SCR1").style.display="none";ge("PANEL-SCR2").style.display="block";
 }
 
 function doAdd(){
@@ -494,15 +752,17 @@ function doAdd(){
   closeMod();renderAll();
 }
 
-function closeMod(){ge("MOD").className="modal-ov";pDay=-1;pSvc=null;}
-
 ge("BADD").addEventListener("click",doAdd);
 ge("BCAN").addEventListener("click",closeMod);
-ge("BBACK").addEventListener("click",function(){ge("SCR2").style.display="none";ge("SCR1").style.display="block";pSvc=null;});
+ge("BBACK").addEventListener("click",function(){ge("PANEL-SCR2").style.display="none";ge("PANEL-SCR1").style.display="block";pSvc=null;});
 ge("BRST").addEventListener("click",function(){week=[[],[],[],[],[]];renderAll();});
-ge("MOD").addEventListener("click",function(e){if(e.target===this)closeMod();});
 
+buildSpecGrid();
 buildGrid();
+renderServicesGrid();
+renderPricing();
+renderProfit();
+renderCTA();
 </script>
 </body>
 </html>
